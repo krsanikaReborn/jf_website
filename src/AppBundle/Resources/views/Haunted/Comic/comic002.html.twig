@@ -1,0 +1,60 @@
+{% extends "AppBundle:Haunted/Comic:comics_layout.html.twig" %}
+{% block title %}사립 다이스스쿨 2교시!{% endblock %}
+{% block comicContents %}
+    <span class="bold size24">사립 다이스스쿨 제 2교시</span>    
+    <div><img id="comics" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_002.jpg")}}"></div>
+    <div id="comment">
+        <span class="bold">공학도 송마음 :</span>
+        <span>에이, 미리언니는 디자이너가 아니잖아요?</span><br>
+        <span class="bold">깨알 나유리 :</span>
+        <span>결국 툴은 똑같은거 쓰지 않나?</span><br>
+        <span class="bold">개복치 채미리 :</span>
+        <span>(돌연사. 사인: 울화병)</span><br>
+        <span class="bold">서초패왕 :</span>
+        <span>이 만화 뭔가 설명할 마음이 있는건가?</span><br>        
+    </div>
+    <div id="character">
+        <span class="bold size18 ">제 2교시 등장인물</span><br><br>
+        <table>
+            <tr>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_002_character1.jpg")}}"><div class="characterText">
+                        <span class="bold size18">공학도 송마음</span><br>
+                        <span>공학부 부원으로써 훌륭한 공학도의 자세(반복작업)를 갖추고 있는 송마음. 여러시도를 하는 와중 쓸데없는걸 발견하기도 한다.</span>
+                    </div>
+                </td>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_001_character2.jpg")}}">
+                    <div class="characterText">
+                        <span class="bold size18">깨알 나유리</span><br>
+                        <span>딱 한 컷에 살짝 나온 나유리. 보통 말림 당할 행동을 하고 다니지만, 요번화에선 말리고 있다.</span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_001_character1.jpg")}}"><div class="characterText">
+                        <span class="bold size18">개복치 채미리</span><br>
+                        <span>만화가(지망)로써 이번에 희생당한 채미리. 저런 문구를 보면 디자이너가 아니라도 KO 당할 것이다.</span>
+                    </div>
+                </td>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_002_character2.jpg")}}">
+                    <div class="characterText">
+                        <span class="bold size18">서초패왕</span><br>
+                        <span>컷에도 나오지 않았지만, 매우 무섭다. 다음 교시에는 이 아수라장을 정리해줄지도?</span>
+                    </div>
+                </td>
+            </tr>      
+            <tr>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_002_character3.jpg")}}"><div class="characterText">
+                        <span class="bold size18">????</span><br>
+                        <span>....!?!??</span>
+                    </div>
+                </td>
+                <td class="characterBox"></td>
+            </tr>   
+        </table>
+    </div>
+{% endblock %}

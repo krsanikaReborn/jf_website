@@ -1,0 +1,153 @@
+body{
+    text-align: center;
+    background-color: white;
+}
+#footer{
+  width: 840px;
+  padding: 30px 0px 20px 0px;
+  margin: 50px auto;
+  position: relative;
+  left:50%;
+  margin-left: -420px;
+  background-color: white;
+  color: black;
+}
+
+.banner{
+    width: 840px;
+    height: auto;
+/*    background-color: skyblue;*/
+    margin: 20px 0px 30px 0px;
+    text-align: center;
+}
+/*.bannerImg1{
+    width: 840px;
+    height: auto;
+    border: 0px;
+}*/
+
+.bannerImg{
+    width: 728px;
+    height: auto;
+    border: 0px;    
+}
+.mainBackButton{
+    left:50%;
+    margin-left: -364px;   
+    position: relative;
+    width: 728px;
+    height: 24px; 
+    padding: 10px 0px 15px 0px;
+    border: 2px #4661b0 solid;
+/*    background-color: plum;*/
+    text-align: center;    
+    vertical-align: middle;
+}
+
+/*#white_text{
+    color: white;    
+}*/
+
+#comicBody{
+  position: relative;
+  width: 840px;
+  float: left;
+  left: 50%;
+  margin-left: -420px;
+/*  padding: 0px 220px 0px 220px;*/
+  background-color: white;
+}
+
+#head{
+    width: 100%;
+    height: auto;
+    margin: 5px 0px 5px 0px;
+/*    background-color: white;*/
+}
+
+#headerImg{
+    margin-top: 10px;
+    width: 728px;    
+    height: auto;
+    border: 0px;
+}
+
+#news{
+    margin: 25px 0px 10px 0px;    
+}
+
+.comicIndex{
+    width: 150px;
+    height: 250px;
+/*    float: left;*/
+    border: black solid 2px;
+    /*background-color: skyblue;*/
+    margin: 15px 5px 15px 0px;       
+}
+
+#comics{
+    width: 840px;
+/*    height: 1000px;    */
+height: auto;
+    margin: 10px 0px 10px 0px;     
+}
+
+.moveButton{
+      vertical-align: middle;
+    text-align: center;
+    width: 140px;
+    height: 24px;
+    padding: 15px 0px 15px 0px;
+    margin-bottom: 20px;
+/*    border: darkblue solid 2px;*/
+    /*background-color: black;*/
+}
+
+#afterButton{
+    float: left;
+    margin-left: 700px;
+    margin-top: -73px;
+}
+
+.characterBox{
+    width: 400px;
+    height: 120px;
+    margin: 10px 5px 10px 5px; 
+/*    border: gold solid 1px;*/
+    display: inline-block;
+    text-align: left;
+    background-size: cover;
+/*    float: left;
+    position: relative;*/
+}
+
+.characterImg{
+    width: 120px;
+    height: 120px;
+    /*position: relative;*/
+}
+
+.characterText{
+  width: 240px;
+  height: 110px;
+  padding: 5px 10px;
+  margin-left: 120px;
+  margin-top: -120px;
+}
+#comment{
+    text-align: left;
+    margin: 10px 0px 10px 0px; 
+}
+
+#backButton{
+    margin-top: 10px;
+    width: 836px;
+    height: 28px;
+    padding: 15px 0px 15px 0px; 
+    border: darkblue solid 2px;
+    vertical-align: middle;
+}
+
+#ment{
+    text-align: left;
+}

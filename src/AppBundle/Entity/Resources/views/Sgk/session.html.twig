@@ -1,0 +1,27 @@
+{% extends "AppBundle::sgk_layout.html.twig" %}
+{% block header %}{% include 'AppBundle:Sgk:header.html.twig'%}{% endblock%}
+{% block contents %}
+{% set new = new1() %}
+    {% block item %}
+        <nav class="session-side">
+            <ul>
+                <li><a href="{{url("sgk00",{"chapter":new})}}"><img alt="설월화 0" src="{{asset('bundles/app/image/sgk_listB01_0.png')}}"></a></li>                
+                <li><a href="{{url("sgk01",{"chapter":new})}}"><img alt="설월화 1" src="{{asset('bundles/app/image/sgk_listB01_1.png')}}"></a></li>
+                <li><a href="{{url("sgk02",{"chapter":new})}}"><img alt="설월화 2" src="{{asset('bundles/app/image/sgk_listB01_2.png')}}"></a></li>
+                <li><a href="{{url("sgk03",{"chapter":new})}}"><img alt="설월화 3" src="{{asset('bundles/app/image/sgk_listB01_3.png')}}"></a></li>
+                <li><a href="{{url("sgk04",{"chapter":new})}}"><img alt="설월화 4" src="{{asset('bundles/app/image/sgk_listB01_4.png')}}"></a></li>
+            </ul>
+        </nav>
+    {% endblock %}
+    
+    {% block session_nav %}
+    {% endblock %}
+    
+    {% block session_contents %}
+
+    {% endblock %}
+
+{% endblock %}
+{% block side %}
+    {% include 'AppBundle:Sgk:sidebar.html.twig'%}
+{% endblock %}

@@ -1,0 +1,70 @@
+{% extends "AppBundle:Haunted/Comic:comics_layout.html.twig" %}
+{% block title %}사립 다이스스쿨 11교시!{% endblock %}
+{% block comicContents %}
+    <span class="bold size24">사립 다이스스쿨 제 11교시</span>    
+    <div><img id="comics" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_011.jpg")}}"></div>
+    <div id="comment">
+        <span class="bold">초보 마스터 채미리 :</span>
+        <span>마스터는 괴롭힘 당하는 존재다.</span><br>
+        <span class="bold">티알못 나유리 :</span>
+        <span>아니다 그건 오해다</span><br>
+        <span class="bold">정상인 오세아 :</span>
+        <span>어휴, 이 티알못들</span><br>
+        <span class="bold">알못 패왕 유소연 :</span>
+        <span>RPG는 파티는 대충 이런느낌이지 않나? RPG라며?</span><br>
+        <span class="bold">알못 제자 이윤주 :</span>
+        <span>그건 뭐죠 스승님</span><br>        
+        <span class="bold">알못 패왕 유소연 :</span>
+        <span>Rocket Propelled Grenade의 줄임말</span><br>        
+        <span class="bold">정상인 오세아 :</span>
+        <span>아냐! 그건 절대 아냐!</span><br>        
+    </div>
+    <div id="character">
+        <span class="bold size18 ">제 11교시 등장인물</span><br><br>
+        <table>
+            <tr>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_010_character1.jpg")}}">
+                    <div class="characterText">
+                        <span class="bold size18">초보 마스터</span><br>
+                        <span>괴롭혀지는 채미리. 마스터들은 캠패인을 시작하기 전에 플레이어들이 원하는 것이 어느것인지 알아봐야한다.</span>
+                    </div>
+                </td>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_010_character2.jpg")}}">
+                    <div class="characterText">
+                        <span class="bold size18">티알못</span><br>
+                        <span>알지도 못하는 나유리. 룰 좀 안다고 해서 알피지를 잘하는게 아닌가보다.</span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_010_character4.jpg")}}">
+                    <div class="characterText">
+                        <span class="bold size18">정상인</span><br>
+                        <span>책으로 오컬트 배운듯한 오세아. 연애도 책으로 배울것인가.</span>
+                    </div>
+                </td>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_010_character3.jpg")}}">
+                    <div class="characterText">
+                        <span class="bold size18">알못 패왕</span><br>
+                        <span>유소연. 패왕은 무치(無恥)</span>
+                    </div>
+                </td>
+            </tr>      
+            <tr>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_010_character5.jpg")}}">
+                    <div class="characterText">
+                        <span class="bold size18">알못 제자</span><br>
+                        <span>이윤주. 혼을 대가로 마검사가 되었다.</span>
+                    </div>
+                </td>
+                <td class="characterBox">
+                </td>
+            </tr>                
+        </table>
+    </div>
+{% endblock %}

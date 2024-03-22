@@ -1,0 +1,91 @@
+{% extends "AppBundle::sgk_layout.html.twig" %}
+{% block stylesheets %}
+        {{ parent() }}
+<link rel="stylesheet" href="{{asset('bundles/app/css/sgk_world.css')}}" />
+{% endblock %}
+{% block header %}{% include 'AppBundle:Sgk:header.html.twig'%}{% endblock%}
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{asset("bundles/app/js/sgk_world_javascript.js")}}" ></script>
+{% endblock %}
+{% block popup %}
+    <div id="fox" >
+        <div id="fox01" class="A_fox" ondrop="drop(event);"  ondragover="allowDrop(event)" ></div>
+        <div id="fox02" class="A_fox" ondrop="drop(event);"  ondragover="allowDrop(event)"></div>
+        <div id="fox03" class="A_fox" ondrop="drop(event);"  ondragover="allowDrop(event)"></div>
+        <div id="fox04" class="A_fox" ondrop="drop(event);"  ondragover="allowDrop(event)"></div>
+        <div id="fox00" class="A_fox" ondrop="drop(event);"  ondragover="allowDrop(event)"></div>
+        <div id="fox05" class="A_fox" ondrop="drop(event);"  ondragover="allowDrop(event)"></div>
+        <div id="fox06" class="A_fox" ondrop="drop(event);"  ondragover="allowDrop(event)"></div>
+        <div id="fox07" class="A_fox" ondrop="drop(event);"  ondragover="allowDrop(event)"></div>
+        <div id="fox08" class="A_fox" ondrop="drop(event);"  ondragover="allowDrop(event)"></div>
+    </div>
+    <div id="popup_page">
+        <div>
+            <div id="popup_Q1" class="popup_change">
+                <div id="video_title1" class="video_title"></div>
+                <div id="video_1" class="world_video" title="스타트 가이드">
+                    <iframe width="640" height="360" src="https://www.youtube.com/embed/-o6_ueO6AJI?rel=1" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div id="popup_Q2" class="popup_change">
+                <div id="video_title2" class="video_title"></div>            
+                <div id="video_2" class="world_video" title="치토세">
+                    <iframe width="640" height="360" src="https://www.youtube.com/embed/udhoIBPBWEE?rel=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div id="popup_Q3" class="popup_change">
+                <div id="video_title3" class="video_title"></div>                
+                <div id="video_3" class="world_video" title="도래신">
+                    <iframe width="640" height="360" src="https://www.youtube.com/embed/T4zxyhTVWJk?rel=0" frameborder="0" allowfullscreen></iframe>
+                </div>              
+            </div>
+            <div id="popup_Q4" class="popup_change">
+                <div id="video_title4" class="video_title"></div>
+                <div id="video_4" class="world_video" title="창조의 서 크레아노미콘">
+                    <iframe width="640" height="360" src="https://www.youtube.com/embed/p9TEMP9K1dM?rel=0" frameborder="0" allowfullscreen></iframe>
+                </div>        
+            </div>
+            <div id="popup_Q5" class="popup_change">
+                <div id="video_title5" class="video_title"></div>
+                <div id="video_5" class="world_video" title="영맥">
+                    <iframe width="640" height="360" src="https://www.youtube.com/embed/XxUon4XBp4M?rel=0" frameborder="0" allowfullscreen></iframe>
+                </div>        
+            </div>           
+            <div id="popup_Q6" class="popup_change">
+                <div id="video_title6" class="video_title"></div>                
+                <div id="video_6" class="world_video" title="적합자">
+                    <iframe width="640" height="360" src="https://www.youtube.com/embed/utAoXcTWcv8?rel=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div id="popup_Q7" class="popup_change">
+                <div id="video_title7" class="video_title"></div>                
+                <div id="video_7" class="world_video" title="구요중">
+                    <iframe width="640" height="360" src="https://www.youtube.com/embed/Lko2OYnEP8Q?rel=0" frameborder="0" allowfullscreen></iframe>
+                </div> 
+            </div>           
+        </div>
+        <div id="world_before" class="popup_button"></div><span id="before_text" class="popup_text"></span>{#팝업창의 이전버튼 #}
+        <span id="before_text" class="popup_text"></span><div id="world_next" class="popup_button"></div>{#팝업창의 다음버튼#}
+    </div>
+{% endblock %}
+{% block contents %}
+    <div id="pageTitle">    
+        <span class="size28 bold">World</span></div>
+    <br><div id="qeustion_box">
+    <div id="Q1" class="uboo"  draggable="true" ondragend="dragend()" ondragstart="drag(event)"></div><span class="world_text size24">스타트 가이드</span>
+    <br>
+    <div id="Q2" class="uboo"  draggable="true" ondragend="dragend()" ondragstart="drag(event)"></div><span class="world_text size24">치토세?</span>
+    <br>    
+    <div id="Q3" class="uboo"  draggable="true" ondragend="dragend()" ondragstart="drag(event)"></div><span class="world_text size24">도래신?</span>
+    <br>    
+    <div id="Q4" class="uboo"  draggable="true" ondragend="dragend()" ondragstart="drag(event)"></div><span class="world_text size24">창조의 서 크레아노미콘</span>
+    <br>    
+    <div id="Q5" class="uboo"  draggable="true" ondragend="dragend()" ondragstart="drag(event)"></div><span class="world_text size24">영맥</span>
+    <br>    
+    <div id="Q6" class="uboo"  draggable="true" ondragend="dragend()" ondragstart="drag(event)"></div><span class="world_text size24">적합자</span>
+    <br>    
+    <div id="Q7" class="uboo"  draggable="true" ondragend="dragend()" ondragstart="drag(event)"></div><span class="world_text size24">구요중</span>
+    </div>
+          
+{%endblock%}

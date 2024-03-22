@@ -1,0 +1,81 @@
+{% extends "AppBundle::haunted_layout.html.twig" %}
+{% block stylesheets %}
+{{parent()}}
+    <link rel="stylesheet" href="{{asset('bundles/app/css/haunted_comics.css')}}" />
+{% endblock %}
+{% block contents %} 
+ <div id="comicBody">
+        <div id="head" class="center">
+             <img id="headerImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_logo.jpg")}}">
+             <br><div id="news"><span>2015/7/29  사립 다이스스쿨 제 22교시 업데이트</span></div><br>   
+        </div>   
+        {% block snsButtonLong %}
+            <div id="hauntedSnsLong" class="center">
+                <div id="snsTwitter" class="snsButton"><a href="https://twitter.com/share" class="twitter-share-button" data-text="헌티드스쿨 TRPG 만화! 사립 다이스스쿨!" data-via="jokerforge" data-count="none" data-hashtags="헌티드스쿨 #사립다이스스쿨">Tweet</a></div>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+               
+                <div id="snsFacebookShare2" class="snsButton fb-share-button" data-href="http://jokerforge.com/haunted/comics" data-layout="button"></div>
+                <div id="fb-root"></div>
+                <script>(function(d, s, id) {
+                  var js, fjs = d.getElementsByTagName(s)[0];
+                  if (d.getElementById(id)) return;
+                  js = d.createElement(s); js.id = id;
+                  js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.3&appId=1625242704379785";
+                  fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));</script>        
+            </div>
+        {% endblock %} <br>
+        <a href="{{url("haunted_main")}}">
+            <div class="mainBackButton"{#class="banner"#}>
+                <span  id="white_text" class="bold size24"><span class="red">B</span>eyond <span class="red">S</span>chool</span>
+{#            <img id="mainBackBanner" class="bannerImg" src="{{asset("bundles/app/image/haunted/beyoundSchool_banner.jpg")}}">#}
+            </div>     
+        </a>
+        <a href="https://www.tumblbug.com/hauntedschool">            
+            <div class="banner">
+            <img id="tumblbug_banner" class="bannerImg" src="{{asset("bundles/app/image/haunted/tumblbug_banner.jpg")}}">
+            </div>
+        </a>
+        <div id="comicsIndex">
+            <a href="{{url("comic_001")}}"><img class="comicIndex" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_001_logo.jpg")}}"></a>
+            <a href="{{url("comic_002")}}"><img class="comicIndex" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_002_logo.jpg")}}"></a>
+            <a href="{{url("comic_003")}}"><img class="comicIndex" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_003_logo.jpg")}}"></a>
+            <a href="{{url("comic_004")}}"><img class="comicIndex" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_004_logo.jpg")}}"></a>
+            <a href="{{url("comic_005")}}"><img class="comicIndex" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_005_logo.jpg")}}"></a> <br>
+            <a href="{{url("comic_006")}}"><img class="comicIndex" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_006_logo.jpg")}}"></a>
+            <a href="{{url("comic_007")}}"><img class="comicIndex" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_007_logo.jpg")}}"></a>
+            <a href="{{url("comic_008")}}"><img class="comicIndex" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_008_logo.jpg")}}"></a>
+            <a href="{{url("comic_009")}}"><img class="comicIndex" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_009_logo.jpg")}}"></a>
+            <a href="{{url("comic_010")}}"><img class="comicIndex" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_010_logo.jpg")}}"></a> <br>            
+            <a href="{{url("comic_011")}}"><img class="comicIndex" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_011_logo.jpg")}}"></a>
+            <a href="{{url("comic_012")}}"><img class="comicIndex" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_012_logo.jpg")}}"></a>
+            <a href="{{url("comic_013")}}"><img class="comicIndex" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_013_logo.jpg")}}"></a>
+            <a href="{{url("comic_014")}}"><img class="comicIndex" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_014_logo.jpg")}}"></a>
+            <a href="{{url("comic_015")}}"><img class="comicIndex" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_015_logo.jpg")}}"></a><br>
+            <a href="{{url("comic_016")}}"><img class="comicIndex" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_016_logo.jpg")}}"></a>
+            <a href="{{url("comic_017")}}"><img class="comicIndex" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_017_logo.jpg")}}"></a>
+            <a href="{{url("comic_018")}}"><img class="comicIndex" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_018_logo.jpg")}}"></a>
+            <a href="{{url("comic_019")}}"><img class="comicIndex" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_019_logo.jpg")}}"></a>         
+            <a href="{{url("comic_020")}}"><img class="comicIndex" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_020_logo.jpg")}}"></a> <br>           
+            <a href="{{url("comic_021")}}"><img class="comicIndex" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_021_logo.jpg")}}"></a>
+            <a href="{{url("comic_022")}}"><img class="comicIndex" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_022_logo.jpg")}}"></a>
+{#            <a href="{{url("comic_023")}}"><img class="comicIndex" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_023_logo.jpg")}}"></a>
+            <a href="{{url("comic_024")}}"><img class="comicIndex" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_024_logo.jpg")}}"></a>
+            <a href="{{url("comic_025")}}"><img class="comicIndex" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_025_logo.jpg")}}"></a><br>
+            <a href="{{url("comic_026")}}"><img class="comicIndex" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_026_logo.jpg")}}"></a>
+            <a href="{{url("comic_027")}}"><img class="comicIndex" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_027_logo.jpg")}}"></a>
+            <a href="{{url("comic_028")}}"><img class="comicIndex" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_028_logo.jpg")}}"></a>
+            <a href="{{url("comic_029")}}"><img class="comicIndex" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_029_logo.jpg")}}"></a>         
+            <a href="{{url("comic_030")}}"><img class="comicIndex" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_030_logo.jpg")}}"></a><br>            
+            <a href="{{url("comic_031")}}"><img class="comicIndex" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_031_logo.jpg")}}"></a>
+            <a href="{{url("comic_032")}}"><img class="comicIndex" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_032_logo.jpg")}}"></a>
+            <a href="{{url("comic_033")}}"><img class="comicIndex" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_033_logo.jpg")}}"></a>
+ #}   
+        </div>  
+</div>        
+    {% block footer %}
+        <div id="footer" class="center clear">
+            Copyright ⓒ 2015 JokerForge All Rights Reserved.                         
+        </div>
+    {% endblock %}          
+    {% endblock %}

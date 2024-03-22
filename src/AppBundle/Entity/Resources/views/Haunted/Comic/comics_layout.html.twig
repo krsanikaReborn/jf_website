@@ -1,0 +1,119 @@
+{% extends "AppBundle::haunted_layout.html.twig" %}
+{% block stylesheets %}
+{{parent()}}
+    <link rel="stylesheet" href="{{asset('bundles/app/css/haunted_comics.css')}}" />
+{% endblock %}
+{% block contents %}   
+    <div id="comicBody" class="center">
+        {% block header %}
+            <a href="https://www.tumblbug.com/hauntedschool"><div class="banner">
+                <img id="mainBackBanner3" class="bannerImg" src="{{asset("bundles/app/image/haunted/tumblbug_banner.jpg")}}">
+            </div></a>
+            <a href="{{url("haunted_comics")}}"><div id="head">
+                <img id="headerImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_logo.jpg")}}">
+            </div></a>
+        {% endblock %}
+    <div id="comicContents">
+        {% block comicContents %}
+        {% endblock %}
+    </div><br>
+    <div id="beforButton" class="moveButton" onclick="before();">
+        <table>
+            <tr>
+                <td><img src="{{asset('bundles/app/image/haunted/beforeButton.png')}}"></td>
+                <td><span class="bold">이전교시 </span></td>
+            </tr>
+        </table>
+    </div>
+    <div id="afterButton" class="moveButton" onclick="after();">
+        <table>
+            <tr>
+                <td><span class="bold">다음교시 </span></td>
+                 <td><img src="{{asset('bundles/app/image/haunted/nextButton.png')}}"></td>
+            </tr>
+        </table>
+        </div>
+    <div id ="bottomContents">
+                {% block snsButtonLong %}
+            <div id="hauntedSnsLong" class="center">
+            <div id="snsTwitter" class="snsButton"><a href="https://twitter.com/share" class="twitter-share-button" data-via="jokerforge" data-count="none" data-hashtags="헌티드스쿨 #사립다이스스쿨">Tweet</a></div>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            <div id="snsFacebookLike" class="snsButton fb-like" data-href="http://jokerforge.com/haunted/comics" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+            <div id="fb-root"></div>
+            <script>(function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.3";
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+        </div>
+        {% endblock %}  
+        <a href="https://www.tumblbug.com/hauntedschool"><div class="banner">
+                <img id="tumblbug_banner" class="bannerImg" src="{{asset("bundles/app/image/haunted/tumblbug_banner.jpg")}}">
+            </div></a>
+        <a href="{{url("haunted_main")}}">
+            <div class="mainBackButton"{#class="banner"#}>
+                <span id="white_text" class="bold size24"><span  class="red">B</span>eyond <span class="red">S</span>chool</span>
+{#            <img id="mainBackBanner" class="bannerImg" src="{{asset("bundles/app/image/haunted/beyoundSchool_banner.jpg")}}">#}
+            </div>     
+        </a>
+        <a href="{{url("haunted_comics")}}"><div id="backButton"><span class="bold size24">Back</span></div></a><br>
+  
+    </div>
+    </div>  
+    {% block footer %}
+        <div id="footer" class="center clear">
+            Copyright ⓒ 2015 JokerForge All Rights Reserved.                         
+        </div>
+    {% endblock %}        
+{% endblock %}
+{% block javascripts %}	
+    {{ parent()}}
+    <script>
+        var beforeUrl = "{{url("comcicBefore")}}";
+        var afterUrl = "{{url("comcicAfter")}}";
+        var comicsUrl = "{{url("haunted_comics")}}";    
+        var url = {{url}};
+    </script>
+    <script type="text/javascript">
+
+    $(function(){
+
+    });
+    function before(){
+        $.ajax({
+            type : "get",
+            url : beforeUrl,
+            data : {"url":url},
+            dataType : "JSON",   
+        }).success(function(result){
+            var isWhat = result.slice(-1);
+                if(isWhat == "."){
+                    alert(result);
+                    location.reload;
+                }else{
+                    location.href= result;            
+                }
+            });  
+    };
+
+    function after(){
+        $.ajax({
+            type : "get",
+            url : afterUrl,
+            data : {"url":url},
+            dataType : "JSON",   
+        }).success(function(result){
+            var isWhat = result.slice(-1);
+                if(isWhat == "."){
+                    alert(result);
+                    location.reload;
+                }else{
+                    location.href= result;            
+                }
+            });  
+    };    
+    </script>
+   
+{% endblock %}

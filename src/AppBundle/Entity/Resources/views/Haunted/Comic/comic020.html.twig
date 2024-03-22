@@ -1,0 +1,68 @@
+{% extends "AppBundle:Haunted/Comic:comics_layout.html.twig" %}
+{% block title %}사립 다이스스쿨 10교시!{% endblock %}
+{% block comicContents %}
+    <span class="bold size24">사립 다이스스쿨 제 10교시</span>
+    <div><img id="comics" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_010.jpg")}}"></div>
+    <div id="comment">
+        <span class="bold">마검사 이윤주 :</span>
+        <span>이게 뭔지 모르겠는데, 그냥 스승님이랑 같은걸 하고 싶어..!</span><br>    
+        <span class="bold">마스터 채미리 :</span>
+        <span>안돼! 마법학교라고! 마법사가 파티에 한명뿐이라니 말이 돼?!</span><br>
+        <span class="bold">돚거 나유리 :</span>
+        <span>그럼 마법도 쓰면 되지. 자 이런식으로 올려서 마검사를 노리는거야!</span><br>
+        <span class="bold">깡통 유소연 :</span>
+        <span>야야. 66666이라니 니꺼 아니라고 너무 적당히잖아. 지능 올려</span><br>
+        <span class="bold">마법사 오세아 :</span>
+        <span>그런데 우리 집에 안가?</span><br>
+        <span class="bold">마스터 채미리 :</span>
+        <span>....우선 다음 넘어가자..</span><br>   
+    </div>
+    <div id="character">
+        <span class="bold size18 ">제 10교시 등장인물</span><br><br>
+        <table>
+            <tr>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_010_character1.jpg")}}">
+                    <div class="characterText">
+                        <span class="bold size18">마스터</span><br>
+                        <span>이제부터 본격적으로 각잡고 시작하고 ...싶어하는 채미리. 갈길이 멀어보인다.</span>
+                    </div>
+                </td>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_010_character2.jpg")}}">
+                    <div class="characterText">
+                        <span class="bold size18">돚거</span><br>
+                        <span>녹색 옷을 입은 나유리. 남의 집에서 항아리를 잘 깰것 같다.</span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_010_character3.jpg")}}">
+                    <div class="characterText">
+                        <span class="bold size18">깡통</span><br>
+                        <span>마법학교지만 전사를 선택한 유소연. 사람의 마음을 모를것 같다.</span>
+                    </div>
+                </td>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_010_character4.jpg")}}">
+                    <div class="characterText">
+                        <span class="bold size18">마법사</span><br>
+                        <span>유일하게 정통 마법사가 된 오세아. 제대로 설명충이 될것 같은 포지션이다.</span>
+                    </div>
+                </td>
+            </tr>      
+            <tr>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_010_character5.jpg")}}">
+                    <div class="characterText">
+                        <span class="bold size18">마검사</span><br>
+                        <span>게임적 용어에 감을 잡는데 오래걸리는 이윤주. 머리는 좋지만 게임적 센스는 떨어지는것 같다.</span>
+                    </div>
+                </td>
+                <td class="characterBox">
+                </td>
+            </tr>                 
+        </table>
+    </div>
+{% endblock %}

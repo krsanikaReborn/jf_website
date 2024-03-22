@@ -1,0 +1,13 @@
+{% extends "AppBundle::joker_layout.html.twig" %}
+{%block contents %}
+    {%include "AppBundle:Joker:header.html.twig" %}    
+    <div id="outerBox" class="scroll">
+        {%include "AppBundle:Joker:top.html.twig" %}    
+        {%include "AppBundle:Joker:product.html.twig" %}
+        {%include "AppBundle:Joker:philo.html.twig" %}
+{#        {%include "AppBundle:Joker:special.html.twig" %}
+#}        {%include "AppBundle:Joker:profile.html.twig" %}
+{#        {%include "AppBundle:Joker:cs.html.twig" %}    #}
+    </div>
+{% endblock %}
+

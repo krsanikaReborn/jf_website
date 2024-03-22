@@ -1,0 +1,164 @@
+{#empty Twig template #}
+{%extends "AppBundle::sgk_layout.html.twig" %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{asset('bundles/app/css/sgk_staff.css')}}" />
+{% endblock %}
+
+{%block header %}
+{%include 'AppBundle:Sgk:header.html.twig'%}
+{%endblock%}
+{%block contents %}
+    <div id="pageTitle">
+        <span class="size28 bold"> 제작진 </span>
+    </div>
+    <div>
+        <div class="staffBox">
+            <div class="staffImg odd">
+                <img  src="{{asset('bundles/app/image/sgk/img/staff_jokery.png')}}">
+            </div>
+            <div class="staffText odd">
+                <span class="size18 bold">조커리/くるさにか</span><br>                
+                    신설동 조사장. <br>
+                    설월화 프로젝트 총괄프로듀서/원작자.<br>
+                    일본게임업계 경력 3년. 현재는 귀국해서 게임개발자.<br>
+                    TRPG경력 19년. 마스터경력 18년.<br>
+            </div>
+        </div>
+        <div class="staffBox">
+            <div class="staffImg even">
+            <img src="{{asset('bundles/app/image/sgk/img/staff_shinCheonGyeon.png')}}"></div>
+            <div class="staffText even">
+                <span class="size18 bold">신천견</span><br>
+                    손으로 하는거라면 뭐든 좋아하는 적마도사<br>
+                    아르비온으로 TRPG를 시작하긴 했는데 이젠 내용이 기억나지 않는다고.<br>
+                    게임 업계 4년차. GM/기획/DB관리 등<br>
+                    폴라리스 북제외 아트웍 전반, DoF 리플레이, 인트로 일러스트 담당<br>
+            </div>
+        </div>
+        <div class="staffBox">
+            <div class="staffImg odd">
+            <img src="{{asset('bundles/app/image/sgk/img/staff_kuro.png')}}">
+            </div>
+            <div class="staffText odd">
+                <span class="size18 bold">J.쿠로</span><br>
+                    화성인. 방송업계에서 음향음향한지 5년차.<br>
+                    TRPG경력15년. 분신술이 절실해지는 30대 초반.<br>
+                    취미가 너무 많아서 슬슬 줄여야 하나 심각히 고민 중.<br>
+                    게임은 궁극적으로 즐거움이 공유할수 있어야 하는 것이라고 생각하는 사람<br>
+            </div>
+        </div>
+        <div class="staffBox">
+            <div class="staffImg even">
+                <img src="{{asset('bundles/app/image/sgk/img/staff_exit.png')}}">
+            </div>
+            <div class="staffText even">
+                <span class="size18 bold">비상구</span><br>
+                    TRPG 경력 13년차. 룰 디자이너<br>
+                    前 RPG TOWER 대표. 
+                    前 뮌히하우젠팀 마스터. 現 극단적극단 마스터.<br>
+                    現 그무엇팀 소속, 現 팀잠실 소속.<br>
+            </div>
+        </div>
+        <div class="staffBox">
+            <div class="staffImg odd">
+                <img src="{{asset('bundles/app/image/sgk/img/staff_whiteViolet.png')}}">
+            </div>
+            <div class="staffText odd">
+                <span class="size18 bold">하얀제비꽃</span><br>
+                    시나리오 담당. 한국어문학과 재학중 <br>
+                    TRPG경력은 4년. 대부분을 마스터와 병행하는 떠오르는 마스터의 별<br>
+                    네이버 TRPGClubD&D 매니저 석시딩 예정 중<br>
+                    좋아하는 TRPG 시스템은 미궁킹덤,아리안로드 등의 일본풍 모험 판타지.<br>
+            </div>
+        </div>
+        <div class="staffBox">
+            <div class="staffImg even">
+                <img src="{{asset('bundles/app/image/sgk/img/staff_sid.png')}}">
+            </div>
+            <div class="staffText even">
+                <span class="size18 bold">SID</span><br>
+                    나레이션 및 더빙 담당. 이우진 프로덕션 소속성우.<br>
+                    모바일게임, UCC에서 주 활동중.<br>
+                    TRPG 경력은 6년. D&D와 새비지월드를 좋아하며 클래식 판타지와 스토리텔링게임을 선호.<br>
+                    본직은 파티쉐. 팀원들을 생체실험하여 매주 새로운 레시피 개발 중◎▽◎!<br>                    
+            </div>
+        </div>
+        <div class="staffBox">
+            <div class="staffImg odd">
+                <img src="{{asset('bundles/app/image/sgk/img/staff_leaf.png')}}">
+            </div>
+            <div class="staffText odd">
+                <span class="size18 bold">NLeaf</span><br>
+                    정보통신계열 대학생.<br>
+                    TRPG경력 5년. 마스터링 경력같은 건 없다.<br>
+                    애증하는 TRPG 시스템은 더블크로스 같은 현대전기물.<br>
+                    뭔가 생각하다가도 삼천포로 잘 새는 탕아 스타일.<br>
+            </div>
+        </div>
+        <div class="staffBox">
+            <div class="staffImg even">
+                <img src="{{asset('bundles/app/image/sgk/img/staff_snowCat.png')}}">                
+            </div>
+            <div class="staffText even">
+                <span class="size18 bold">설묘</span><br>
+                    멀티미디어과(프로그래밍)학과 재학생<br>
+                    RPG경력 1년반정도가 되어가는 아직 새내기이고 싶은 눈고양이입니다☆<br>
+                    ※주의 ※ 영역표시로 스크래치를 시전함<br>
+                    <br>
+            </div>
+        </div>
+        <div class="staffBox">
+            <div class="staffImg odd">
+                <img src="{{asset('bundles/app/image/sgk/img/staff_chicken.png')}}">
+            </div>
+            <div class="staffText odd">
+                <span class="size18 bold">닭</span><br>
+                TRPG 경력 1년 반. <br>
+                마스터링에는 생각이 없는 플레이어 전문인력.<br>
+                D&D 3.5를 많이 했다. 본인은 신비주의를 표방하고 있다고 주장하고 있다.<br>
+                그러나 그 실체는 토오사카 린을 좋아하는 선량한 운동청년.<br>
+                잠을 안자는 것 같다.<br>
+            </div>
+        </div>
+        <div class="staffBox">
+            <div class="staffImg even">
+                <img src="{{asset('bundles/app/image/sgk/img/staff_apple.png')}}">
+            </div>
+            <div class="staffText even ">
+                <span class="size18 bold">사과</span><br>
+                    현직 호텔카지노 요리사.<br>
+                    TRPG 경력 2년.<br>
+                    좋아하는 룰은 Dawn of FATE.<br>
+                    온갖 덕질을 좋아함. 최근 죠죠러에 눈을 떴다.<br><br>
+            </div>
+        </div>
+        <div class="staffBox">
+            <div class="staffImg odd">
+                <img  src="{{asset('bundles/app/image/sgk/img/staff_arade.png')}}">
+            </div>
+            <div class="staffText odd">
+                <span class="size18 bold">아라드에이커</span><br>
+                    설월화 프로젝트의 디렉터.<br>
+                    TRPG 경력 7년. 마스터링 2년.<br>
+                    주위에 남자가 모이는 마성의남자 속성보유.<br>
+                    굴렸다하면 1을 내는 자타공인 불운의 아이콘.<br>
+            </div>
+        </div>        
+        <div class="staffBox">
+            <div class="staffImg even">
+                <img  src="{{asset('bundles/app/image/sgk/img/staff_librarian.png')}}">
+            </div>
+            <div class="staffText even">
+                <span class="size18 bold">사서</span><br>
+                    어쩌다가 끌려온 일러스트레이터. <br>
+                    TRPG는 겨우 몇 달밖에 안했으나 장기 플레이 경력은 2회. <br>
+                    주사위 운은 괜찮은 편으로 노 펌블 6크리티컬 기록 보유자.<br>
+            </div>
+        </div>        
+    </div>
+
+{%endblock%}
+{% block side %}
+    {% include 'AppBundle:Sgk:sidebar.html.twig'%}
+{% endblock %}

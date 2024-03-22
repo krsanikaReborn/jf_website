@@ -1,0 +1,68 @@
+{% extends "AppBundle:Haunted/Comic:comics_layout.html.twig" %}
+{% block title %}사립 다이스스쿨 제 5교시!{% endblock %}
+{% block comicContents %}
+    <span class="bold size24">사립 다이스스쿨 제 5교시</span>
+    <div><img id="comics" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_005.jpg")}}"></div>
+    <div id="comment">
+        <span class="bold">파다완 이윤주 :</span>
+        <span>그런데 선배님들 3학년인데, 이러고 있어도 되요?</span><br>
+        <span class="bold">채미리 :</span>
+        <span>염라대왕이찾아온다.염라대왕이찾아온다.염라대ㅇ..</span><br>
+        <span class="bold">시스로드 나유리 :</span>
+        <span>'후후. 이렇게 유소연의 시간을 낭비시켜 성적을 낮춘다...!'</span><br>
+        <span class="bold">제다이 유소연 :</span>
+        <span>난 한티사범대 갈거라, 이 이상의 성적은 필요없어.</span><br>
+        <span class="bold">시스로드 나유리 :</span>
+        <span>(두쾅)</span><br>        
+        <span class="bold">공기 오세아 :</span>
+        <span>......</span><br>        
+    </div>
+    <div id="character">
+        <span class="bold size18 ">제 5교시 등장인물</span><br><br>
+        <table>
+            <tr>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_004_character3.jpg")}}">
+                    <div class="characterText">
+                        <span class="bold size18">시스로드</span><br>
+                        <span>승리를 통하여 나를 얽매는 사슬은 부숴진다. 포스가 나를 자유롭게 하리라. 그러므로 유소연을 이기기 위해 무엇이든 한다.</span>
+                    </div>
+                </td>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_005_character1.jpg")}}">
+                    <div class="characterText">
+                        <span class="bold size18">제다이</span><br>
+                        <span>사범대로 목표가 바뀌며 한가해진 유소연. 파다완 이윤주를 제자로 들여 포스(묘권)에 대해 알려주고 있다. </span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_001_character1.jpg")}}">
+                    <div class="characterText">
+                        <span class="bold size18">채미리</span><br>
+                        <span>염라대왕에게 약속을 잘못하여 쫓기는 중인 채미리. 언제라도 문이 벌컥 열릴것 같다.</span>
+                    </div>
+                </td>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_004_character1.jpg")}}">
+                    <div class="characterText">
+                        <span class="bold size18">파다완</span><br>
+                        <span>3화 참조. TRPG는 부르마불도 소꿉놀이도 아니다..!</span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_004_character2.jpg")}}">
+                    <div class="characterText">
+                        <span class="bold size18">공기</span><br>
+                        <span>오세아웨건은 설명할게 없으면 공기가 된다.</span>
+                    </div>
+                </td>
+                <td class="characterBox">
+                </td>
+            </tr>            
+        </table>
+    </div>
+{% endblock %}

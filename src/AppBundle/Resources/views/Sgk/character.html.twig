@@ -1,0 +1,352 @@
+{% extends "AppBundle::sgk_layout.html.twig" %}
+{% block header %}{% include 'AppBundle:Sgk:header.html.twig'%}{% endblock%}
+{% block stylesheets %}
+        {{ parent() }}
+<link rel="stylesheet" href="{{asset('bundles/app/css/sgk_character.css')}}" />
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{asset("bundles/app/js/sgk_character.js")}}" ></script>
+{% endblock %}
+{% block popup %}
+    <div id="popup_page">
+        <div>
+            <div id="popup_char_1" class="popup_change">
+                <div id="char_page_1" class="char_page"></div>
+                <div id="char_text_1" class="char_text"></div>                  
+                <div id="char_back1_1" class="char_back1"></div>              
+            </div>
+            <div id="popup_char_2" class="popup_change">
+                <div id="char_page_2" class="char_page"></div>            
+                <div id="char_text_2" class="char_text"></div>                                  
+                <div id="char_back1_2" class="char_back1">
+                </div>
+            </div>
+            <div id="popup_char_3" class="popup_change">
+                <div id="char_page_3" class="char_page"></div>                
+                <div id="char_text_3" class="char_text"></div>                                  
+                <div id="char_back1_3" class="char_back1">
+                </div>              
+            </div>
+            <div id="popup_char_4" class="popup_change">
+                <div id="char_page_4" class="char_page"></div>
+                <div id="char_text_4" class="char_text"></div>                                  
+                <div id="char_back1_4" class="char_back1" >
+               </div>        
+            </div>
+            <div id="popup_char_5" class="popup_change">
+                <div id="char_page_5" class="char_page"></div>
+                <div id="char_text_5" class="char_text"></div>                                  
+                <div id="char_back1_5" class="char_back1" >
+                </div>        
+            </div>
+            <div id="popup_char_6" class="popup_change">
+                <div id="char_page_6" class="char_page"></div>
+                <div id="char_text_6" class="char_text"></div>                                  
+                <div id="char_back1_6" class="char_back1" >
+                </div>        
+            </div>           
+            <div id="popup_char_7" class="popup_change">
+                <div id="char_page_7" class="char_page"></div>  
+                <div id="char_text_7" class="char_text"></div>                                  
+                <div id="char_back1_7" class="char_back1" >
+                </div>
+            </div>
+            <div id="popup_char_8" class="popup_change">
+                <div id="char_page_8" class="char_page"></div>          
+                <div id="char_text_8" class="char_text"></div>                                  
+                <div id="char_back1_8" class="char_back1" >
+                </div> 
+            </div>           
+            <div id="popup_char_9" class="popup_change">
+                <div id="char_page_9" class="char_page"></div>    
+                <div id="char_text_9" class="char_text"></div>                                  
+                <div id="char_back1_9" class="char_back1" >
+                </div> 
+            </div>            
+            <div id="popup_char_10" class="popup_change">
+                <div id="char_page_10" class="char_page"></div>       
+                <div id="char_text_10" class="char_text"></div>                                  
+                <div id="char_back1_10" class="char_back1" >
+               </div> 
+            </div>        
+            <div id="popup_char_11" class="popup_change">
+                <div id="char_page_11" class="char_page"></div>   
+                <div id="char_text_11" class="char_text"></div>                                  
+                <div id="char_back1_11" class="char_back1" >
+                </div> 
+            </div>        
+            <div id="popup_char_12" class="popup_change">
+                <div id="char_page_12" class="char_page"></div>   
+                <div id="char_text_12" class="char_text"></div>                                  
+                <div id="char_back1_12" class="char_back1" >
+                </div> 
+            </div> 
+            <div id="popup_char_13" class="popup_change">
+                <div id="char_page_13" class="char_page"></div>
+                <div id="char_text_13" class="char_text"></div>                  
+                <div id="char_back1_13" class="char_back1"></div>              
+            </div>
+            <div id="popup_char_14" class="popup_change">
+                <div id="char_page_14" class="char_page"></div>            
+                <div id="char_text_14" class="char_text"></div>                                  
+                <div id="char_back1_14" class="char_back1">
+                </div>
+            </div>
+            <div id="popup_char_15" class="popup_change">
+                <div id="char_page_15" class="char_page"></div>
+                <div id="char_text_15" class="char_text"></div>                                  
+                <div id="char_back1_15" class="char_back1" >
+                </div>        
+            </div>
+            <div id="popup_char_16" class="popup_change">
+                <div id="char_page_16" class="char_page"></div>
+                <div id="char_text_16" class="char_text"></div>                                  
+                <div id="char_back1_16" class="char_back1" >
+                </div>        
+            </div>           
+            <div id="popup_char_17" class="popup_change">
+                <div id="char_page_17" class="char_page"></div>  
+                <div id="char_text_17" class="char_text"></div>                                  
+                <div id="char_back1_17" class="char_back1" >
+                </div>
+            </div>
+            <div id="popup_char_18" class="popup_change">
+                <div id="char_page_18" class="char_page"></div>          
+                <div id="char_text_18" class="char_text"></div>                                  
+                <div id="char_back1_18" class="char_back1" >
+                </div> 
+            </div>           
+            <div id="popup_char_19" class="popup_change">
+                <div id="char_page_19" class="char_page"></div>    
+                <div id="char_text_19" class="char_text"></div>                                  
+                <div id="char_back1_19" class="char_back1" >
+                </div> 
+            </div>            
+            <div id="popup_char_20" class="popup_change">
+                <div id="char_page_20" class="char_page"></div>       
+                <div id="char_text_20" class="char_text"></div>                                  
+                <div id="char_back1_20" class="char_back1" >
+               </div> 
+            </div>        
+            <div id="popup_char_21" class="popup_change">
+                <div id="char_page_21" class="char_page"></div>   
+                <div id="char_text_21" class="char_text"></div>                                  
+                <div id="char_back1_21" class="char_back1" >
+                </div> 
+            </div>        
+            <div id="popup_char_22" class="popup_change">
+                <div id="char_page_22" class="char_page"></div>   
+                <div id="char_text_22" class="char_text"></div>                                  
+                <div id="char_back1_22" class="char_back1" >
+                </div> 
+            </div>
+            <div id="popup_char_23" class="popup_change">
+                <div id="char_page_23" class="char_page"></div>                
+                <div id="char_text_23" class="char_text"></div>                                  
+                <div id="char_back1_23" class="char_back1">
+                </div>              
+            </div>
+            <div id="popup_char_24" class="popup_change">
+                <div id="char_page_24" class="char_page"></div>
+                <div id="char_text_24" class="char_text"></div>                                  
+                <div id="char_back1_24" class="char_back1" >
+               </div>        
+            </div>
+            <div id="popup_char_25" class="popup_change">
+                <div id="char_page_25" class="char_page"></div>
+                <div id="char_text_25" class="char_text"></div>                                  
+                <div id="char_back1_25" class="char_back1" >
+                </div>        
+            </div>
+            <div id="popup_char_26" class="popup_change">
+                <div id="char_page_26" class="char_page"></div>
+                <div id="char_text_26" class="char_text"></div>                                  
+                <div id="char_back1_26" class="char_back1" >
+                </div>        
+            </div>           
+            <div id="popup_char_27" class="popup_change">
+                <div id="char_page_27" class="char_page"></div>  
+                <div id="char_text_27" class="char_text"></div>                                  
+                <div id="char_back1_27" class="char_back1" >
+                </div>
+            </div>
+            <div id="popup_char_28" class="popup_change">
+                <div id="char_page_28" class="char_page"></div>          
+                <div id="char_text_28" class="char_text"></div>                                  
+                <div id="char_back1_28" class="char_back1" >
+                </div> 
+            </div>           
+            <div id="popup_char_29" class="popup_change">
+                <div id="char_page_29" class="char_page"></div>    
+                <div id="char_text_29" class="char_text"></div>                                  
+                <div id="char_back1_29" class="char_back1" >
+                </div> 
+            </div>            
+            <div id="popup_char_30" class="popup_change">
+                <div id="char_page_30" class="char_page"></div>       
+                <div id="char_text_30" class="char_text"></div>                                  
+                <div id="char_back1_30" class="char_back1" >
+               </div> 
+            </div>                    
+        </div>
+ </div>
+{% endblock %}
+{% block contents %}
+{#<div id="backimg_c">
+    <img alt="" src="{{asset('bundles/app/image/sgk_characterback.png')}}">
+</div>#}
+<div id="pageTitle">
+    <span class="size28 bold">Character</span></div>
+    <div id="character_box">
+        <div class="char_box">
+            <div id="sgk_01"class="char_img s16" onclick="clickBox(01);">
+                <img  src="">
+            </div>
+        </div>
+        <div class="char_box">
+            <div id="sgk_02" class="char_img s16" onclick="clickBox(02);"></div>
+                <img src="">
+        </div>
+        <div class="char_box">
+            <div id="sgk_03" class="char_img s4" onclick="clickBox(03);">
+                <img src="">
+            </div>
+        </div>
+        <div class="char_box">
+            <div id="sgk_04" class="char_img s1" onclick="clickBox(04);">
+                <img src="">
+            </div>
+        </div>
+        <div class="char_box">
+            <div id="sgk_05" class="char_img s1" onclick="clickBox(05);">
+                <img src="">
+            </div>
+        </div>
+        <div class="char_box">
+            <div id="sgk_06" class="char_img s2" onclick="clickBox(06);">
+                <img  src="">
+            </div>
+        </div>            
+        <div class="char_box">
+            <div id="sgk_07" class="char_img s4" onclick="clickBox(07);">
+                <img src="">
+            </div>
+        </div>
+        <div class="char_box">
+            <div id="sgk_08" class="char_img s4" onclick="clickBox(08);">
+                <img  src="">
+            </div>
+        </div>
+        <div class="char_box">
+            <div id="sgk_09" class="char_img s4" onclick="clickBox(09);">
+                <img src="">                
+            </div>
+        </div>
+        <div class="char_box">
+            <div id="sgk_10" class="char_img s4" onclick="clickBox(10);">
+                <img src="">
+            </div>
+        </div>
+        <div class="char_box">
+            <div id="sgk_11" class="char_img s4" onclick="clickBox(11);">
+                <img src="">
+            </div>
+        </div>
+        <div class="char_box">
+            <div id="sgk_12" class="char_img s4" onclick="clickBox(12);">
+                <img  src="">
+            </div>
+        </div>        
+        <div class="char_box">
+            <div id="sgk_13" class="char_img s4" onclick="clickBox(13);">
+                <img  src="">
+            </div>
+        </div>
+        <div class="char_box">
+            <div id="sgk_14" class="char_img s16" onclick="clickBox(14);">
+                <img  src="">
+            </div>
+        </div>
+        <div class="char_box">
+            <div id="sgk_15" class="char_img s4" onclick="clickBox(15);">
+                <img  src="">
+            </div>
+        </div>
+        <div class="char_box">
+            <div id="sgk_16" class="char_img s1" onclick="clickBox(16);">
+                <img  src="">
+            </div>
+        </div>
+        <div class="char_box">
+            <div id="sgk_17" class="char_img s4" onclick="clickBox(17);">
+                <img  src="">
+            </div>
+        </div>
+        <div class="char_box">
+            <div id="sgk_18" class="char_img s4" onclick="clickBox(18);">
+                <img  src="">
+            </div>
+        </div>         
+        <div class="char_box">
+            <div id="sgk_19" class="char_img s4" onclick="clickBox(19);">
+                <img  src="">
+            </div>
+        </div>         
+        <div class="char_box">
+            <div id="sgk_20" class="char_img s4" onclick="clickBox(20);">
+                <img  src="">
+            </div>
+        </div>         
+        <div class="char_box">
+            <div id="sgk_21" class="char_img s4" onclick="clickBox(21);">
+                <img  src="">
+            </div>
+        </div>         
+        <div class="char_box">
+            <div id="sgk_22" class="char_img s4" onclick="clickBox(22);">
+                <img  src="">
+            </div>
+        </div>    
+        <div class="char_box">
+            <div id="sgk_23" class="char_img s16" onclick="clickBox(23);">
+                <img  src="">
+            </div>
+        </div>        
+        <div class="char_box">
+            <div id="sgk_24" class="char_img s4" onclick="clickBox(24);">
+                <img  src="">
+            </div>
+        </div>
+        <div class="char_box">
+            <div id="sgk_25" class="char_img s4" onclick="clickBox(25);">
+                <img  src="">
+            </div>
+        </div>
+        <div class="char_box">
+            <div id="sgk_26" class="char_img s1" onclick="clickBox(26);">
+                <img  src="">
+            </div>
+        </div>
+        <div class="char_box">
+            <div id="sgk_27" class="char_img s1" onclick="clickBox(27);">
+                <img  src="">
+            </div>
+        </div>
+        <div class="char_box">
+            <div id="sgk_28" class="char_img s1" onclick="clickBox(28);">
+                <img  src="">
+            </div>
+        </div>         
+        <div class="char_box">
+            <div id="sgk_29" class="char_img s4" onclick="clickBox(29);">
+                <img  src="">
+            </div>
+        </div>         
+        <div class="char_box">
+            <div id="sgk_30" class="char_img s4" onclick="clickBox(30);">
+                <img  src="">
+            </div>
+        </div>                
+    </div>
+{%endblock%}

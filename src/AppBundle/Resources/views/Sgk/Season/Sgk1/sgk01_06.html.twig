@@ -1,0 +1,21 @@
+{% block session_contents %}
+    <div class="main-area">
+    <div class="main-visual">
+            <img alt="" src="{{asset('bundles/app/image/sgk_title01_6.jpg')}}">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="{{url("sgk01_06_view")}}"><img alt="" src="{{asset('bundles/app/image/sgk_lis_link_B01_01.png')}}"></a></li>
+            <li><a href="{{url("sgk01_06_view")}}"><img alt="" src="{{asset('bundles/app/image/sgk_lis_link_B01_02.png')}}"></a></li>
+            {# 줄 수를 받아서? 자바스크립으로 강제로 스크롤바를 이동시켜준다.수정필요 #}
+            <li><img alt="" src="{{asset('bundles/app/image/sgk_list00.png')}}"></a></li>
+            <li><img alt="" src="{{asset('bundles/app/image/sgk_list00.png')}}"></a></li>
+            <li><img alt="" src="{{asset('bundles/app/image/sgk_list00.png')}}"></a></li>            
+            <li><img alt="" src="{{asset('bundles/app/image/sgk_list00.png')}}"></a></li>            
+         </ul>
+    </nav>
+</div>
+            <p>설월화 1</p>
+            제 6화
+            <br>엔딩!
+{% endblock %}

@@ -1,0 +1,60 @@
+{% extends "AppBundle:Haunted/Comic:comics_layout.html.twig" %}
+{% block title %}사립 다이스스쿨 13교시!{% endblock %}
+{% block comicContents %}
+    <span class="bold size24">사립 다이스스쿨 제 13교시</span>
+    <div><img id="comics" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_013.jpg")}}"></div>
+    <div id="comment">
+        <span class="bold">깡통색 패기 유소연 :</span>
+        <span>고고고고고고고고고[알 수 없는 패기가 보이는 것 같다]</span><br>
+        <span class="bold">여기서도 설명충 오세아 :</span>
+        <span>여기서는 크고 싶었는데...</span><br>
+    </div>
+    <div id="character">
+        <span class="bold size18 ">제 13교시 등장인물</span><br><br>
+        <table>
+            <tr>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_010_character3.jpg")}}">
+                    <div class="characterText">
+                        <span class="bold size18">깡통색 패기 유소연</span><br>
+                        <span>아직도 능력에 굶주려 있는 유소연. 알 수 없는 패기와 아우라가 보인다.</span>
+                    </div>
+                </td>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_010_character2.jpg")}}">
+                    <div class="characterText">
+                        <span class="bold size18">돚거의 정석 나유리</span><br>
+                        <span>이정도면 돚거라고 만족하고 있다. 점점 녹색옷의 젤다가 보이는 것 같다.</span>
+                    </div>
+                </td>
+            </tr>      
+            <tr>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_010_character4.jpg")}}">
+                    <div class="characterText">
+                        <span class="bold size18">여기서도 설명충 오세아</span><br>
+                        <span>게임을 해도 설명충의 별이 떨어지지 않는다. 운명인거 같다.</span>
+                    </div>
+                </td>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_010_character5.jpg")}}">
+                    <div class="characterText">
+                        <span class="bold size18">불운의 아이콘 이윤주</span><br>
+                        <span>불행은 계속된다. 과거에도 미래에도 계속...</span>
+                    </div>
+                </td>
+            </tr>            
+            <tr>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_010_character1.jpg")}}">
+                    <div class="characterText">
+                        <span class="bold size18">마스터의 별을 띄운 채미리</span><br>
+                        <span>마스터의 고뇌를 느끼고 있다. 한번 느껴봤다면 두번째에는 당하지 않았을텐데...[페가수스!!!]</span>
+                    </div>
+                </td>
+                <td class="characterBox">
+                </td>
+            </tr>              
+        </table>
+    </div>
+{% endblock %}

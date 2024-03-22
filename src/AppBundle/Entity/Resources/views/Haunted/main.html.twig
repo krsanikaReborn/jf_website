@@ -1,0 +1,123 @@
+{% extends "AppBundle::haunted_layout.html.twig" %}
+{% block contents %} 
+    <div id="backgroundHaunted" class="backgroundImg animationName" style="background-image:url({{asset('bundles/app/image/haunted/backgroundImg_03.jpg')}})" >
+{#
+        <div id="backgroundHaunted3" class="backgroundImg animationName" style="background-image:url({{asset('bundles/app/image/haunted/backgroundImg_02.PNG')}})"></div>
+#}      <div id="backgroundHaunted2" class="backgroundImg animationName" ></div>
+        <div id="backgroundHaunted4" class="backgroundImg animationName" style="background-image:url({{asset('bundles/app/image/haunted/backgroundImg_01.PNG')}})"></div>
+        <div id="back_dark"></div>
+        {% block leftContents %}
+            <div id="leftContents" class="animationName">
+                <img id="hauntedLog" src="{{asset('bundles/app/image/haunted/beyoundSchool_logo.png')}}">
+{#                <div id="adText">이곳은 치닫고 싸우며 방황하는 자신들의 이야기를 자아내는 자들의 안식처</div>#}
+                <div id="pictreZone" class="white"><span id="adText" class="bold size24">3000만원 돌파!<br>축전<br></span>
+                <img id="hauntedPictre" src="{{asset('bundles/app/image/haunted/congratulationPicture.jpg')}}"></div>
+                <img id="hauntedCBig" src="{{asset('bundles/app/image/haunted/congratulationPicture.jpg')}}">
+            </div>
+        {% endblock %}
+        {% block rightContents %}
+            <div id="rightContents" class="float animationName">
+                <table id="menuTable">
+                    <tr class="hauntedNews">
+                        <td class="bold right">News</td>
+                        <td class="left"><div id="newsText" class="size14">05.30<br>사립다이스스쿨 14교시 업데이트<br><br>05.27<br>사립다이스스쿨 13교시 업데이트
+                            </div>
+                            <div id="newsBack"></div>
+                        </td>
+                    </tr>
+                    <tr id="hauntedSns">
+                            <td class="bold right">Share</td>
+                            <td class="left">
+                                {% block snsButton %}
+                                    <div id="hauntedSnsButton">
+                                        <div id="snsTwitter" class="snsButton">
+                                            <a href="https://twitter.com/share" id="twitter" class="twitter-share-button" data-via="JokerForge" data-count="none" data-hashtags="헌티드스쿨 #비욘드스쿨">Tweet</a>
+                                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                                        </div>    
+                                        <div id="snsFacebookShare" class="snsButton fb-like" data-href="http://www.jokerforge.com/haunted/main" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+                                        <div id="fb-root"></div>
+                                        <script>(function(d, s, id) {
+                                          var js, fjs = d.getElementsByTagName(s)[0];
+                                          if (d.getElementById(id)) return;
+                                          js = d.createElement(s); js.id = id;
+                                          js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.3&appId=1625242704379785";
+                                          fjs.parentNode.insertBefore(js, fjs);
+                                        }(document, 'script', 'facebook-jssdk'));</script>
+                                  </div>
+                                {% endblock %}
+                                </td>
+                    </tr>                    
+                    <tr class="hauntedTumblbug">
+                        <td class="bold right">Tumblbug</td>
+                        <td id="tumblbugLink" class="left">
+                            <a href="https://tumblbug.com/ko/hauntedschool">
+                                <img id="tumblbug" src="{{asset('bundles/app/image/haunted/hauntedShcool_logo.jpg')}}">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr class="hauntedMovie">
+                        <td class="bold right">Movie</td>
+                        <td class="left"><a href="https://www.youtube.com/watch?v=7NRECuV7dJI">
+                                <div id="movieTitle" style="background-image:url({{asset('bundles/app/image/haunted/movie_title.png')}})"><img id="playButton" src="{{asset('bundles/app/image/haunted/PlayButton.png')}}">
+                                </div></a>
+                        </td>
+                    </tr>
+                    <tr class="hauntedOfficialTwitter">
+                        <td class="bold right">OfficialTwitter</td>
+                        <td class="left">
+                            <a href="https://twitter.com/jokerforge"><img id="jokerTwitter" src="{{asset('bundles/app/image/officialTwitter_banner.jpg')}}">
+                            </a>
+                        </td>
+                    </tr>                    
+                    <tr class="hauntedComic">
+                        <td class="bold right">Comics</td>
+                        <td class="left">
+                            <a href="{{url("haunted_comics")}}">
+                            <img id="hauntedComics" src="{{asset('bundles/app/image/haunted/diceschool/diceschool_logo.jpg')}}">
+                            </a>
+                        </td>                        
+                    </tr>
+{#                    <tr class="staff">
+                        <td class="bold right">Staff</td>
+                        <td class="left"></td>
+                    </tr>#}
+                    <tr class="hauntedHome">
+                        <td id="homeTd1" class="bold right">JokerForge</td>
+                        <td id="homeTd2" class="left">
+                            <a href="{{url("joker_index")}}">
+                                <img id="jokerforgeLogo" src="{{asset('bundles/app/image/jokerforge_banner.jpg')}}">
+                            </a>
+                        </td>                        
+                    </tr>
+                </table>
+            </div>
+        {% endblock %}        
+    </div>
+    {% block footer %}
+        <div id="footer" class="center clear">
+            
+            Copyright ⓒ 2015 JokerForge All Rights Reserved.                         
+        </div>
+    {% endblock %}
+{% endblock %}
+{% block javascripts %}	
+    {{ parent()}}
+    <script type="text/javascript">
+    $(function(){
+        $("#back_dark").hide();
+        $("#hauntedCBig").hide();        
+        $("#back_dark").click(function(){
+            if($("#back_dark").css("display") === "block"){
+                $("#back_dark").hide();
+                $("#hauntedCBig").hide();
+            }
+        });
+        
+        $("#pictreZone").click(function(){
+            $("#back_dark").show();
+            $("#hauntedCBig").show();
+        });
+    });
+    </script>
+   
+{% endblock %}

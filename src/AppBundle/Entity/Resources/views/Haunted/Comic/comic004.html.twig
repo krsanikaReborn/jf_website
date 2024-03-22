@@ -1,0 +1,51 @@
+{% extends "AppBundle:Haunted/Comic:comics_layout.html.twig" %}
+{% block title %}사립 다이스스쿨 4교시!{% endblock %}
+{% block comicContents %}
+    <span class="bold size24">사립 다이스스쿨 제 4교시</span>
+    <div><img id="comics" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_004.jpg")}}"></div>
+    <div id="comment">
+        <span class="bold">보라색맛 오세아 :</span>
+        <span>근데 TRPG라는건 어떻게 안거야?</span><br>
+        <span class="bold">아유미 이윤주 :</span>
+        <span>역시 유리선배! 이런 저주 물품으로 사부님을 노리셨던거군요! 무서운 선배..!</span><br>
+        <span class="bold">.... :</span>
+        <span>(고오오오)</span><br>
+        <span class="bold">호랭이 나유리 :</span>
+        <span>오, 그런 방법이.. 아니 이건 오해다!</span><br>
+        
+    
+    </div>
+    <div id="character">
+        <span class="bold size18 ">제 4교시 등장인물</span><br><br>
+        <table>
+            <tr>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_004_character1.jpg")}}">
+                    <div class="characterText">
+                        <span class="bold size18">아유미 이윤주</span><br>
+                        <span>꼬시다.</span>
+                    </div>
+                </td>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_004_character2.jpg")}}">
+                    <div class="characterText">
+                        <span class="bold size18">보라색맛 오세아</span><br>
+                        <span>말풍선이 한개도 없어 보라색맛이 된 오세아. 이 만화중에선 가장 정상적인걸 걱정하는것 같다.</span>
+                    </div>
+                </td>
+            </tr>     
+            <tr>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_004_character3.jpg")}}">
+                    <div class="characterText">
+                        <span class="bold size18">호랭이 나유리</span><br>
+                        <span>자신의 이야기가 아니더라도 등장하는 나유리. TRPG하는 오빠를 두었다. 왠지 설명충이 될 것 같은 느낌이 든다.</span>
+                    </div>
+                </td>
+                <td class="characterBox">
+                    
+                </td>
+            </tr>             
+        </table>
+    </div>
+{% endblock %}

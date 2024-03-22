@@ -1,0 +1,72 @@
+{% extends "AppBundle:Haunted/Comic:comics_layout.html.twig" %}
+{% block title %}사립 다이스스쿨 16교시!{% endblock %}
+{% block comicContents %}
+    <span class="bold size24">사립 다이스스쿨 제 16교시</span>
+    <div>
+        <img id="comics" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_0161.jpg")}}">
+        <img id="comics" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_0162.jpg")}}">
+    </div>
+    <div id="comment">
+        <span class="bold">의무감에서 해방된 채미리 :</span>
+        <span>어떻게 그렇게 숨 쉴틈 없이 얘기해?</span><br>
+        <span class="bold">설명왕 오세아 :</span>
+        <span>그건 말이지 평소에 무언가를 죽어라 쫓다보면(불라불라)</span><br>
+        <span class="bold">졌다고 느끼는 유소연 :</span>
+        <span>왜 이렇게 찜찜한 기분이지...</span><br>
+        <span class="bold">돌아가고 싶은 이윤주 :</span>
+        <span>사람은 할 일을 모두 끝마쳐야 쉴 수 있는거에요...</span><br>
+        <span class="bold">붙잡힌 나유리 :</span>
+        <span>이거 놔라 집에도 못가는 것이!</span><br>
+        <span class="bold">돌아가고 싶은 이윤주 :</span>
+        <span>집에 가고 싶다... 매우...</span><br>        
+    
+    </div>
+    <div id="character">
+        <span class="bold size18 ">제 16교시 등장인물</span><br><br>
+        <table>
+            <tr>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_010_character1.jpg")}}">
+                    <div class="characterText">
+                        <span class="bold size18">채미리</span><br>
+                        <span>캐릭터를 성공적으로(?) 만든 것을 기뻐하고 있다. 이 순간만큼은 세상을 다 가진 기분인거 같다.</span>
+                    </div>
+                </td>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_010_character4.jpg")}}">
+                    <div class="characterText">
+                        <span class="bold size18">오세아</span><br>
+                        <span>아직 다 얘기 못했는데 그래서 설명을 계속 할 수 있는 이유는...<del>그만해</del></span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_010_character3.jpg")}}">
+                    <div class="characterText">
+                        <span class="bold size18">유소연</span><br>
+                        <span>아직도 자신에 비해 캐릭터의 강함이 모자라다고 생각한다. 이윤주의 손에서 책을 떼주겠다는 원래의 목적은 이제 안중에도 없는 것 같다.</span>
+                    </div>
+                </td>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_010_character2.jpg")}}">
+                    <div class="characterText">
+                        <span class="bold size18">나유리</span><br>
+                        <span>왠지 모르지만 붙잡혔다. 쉬고 싶은 마음만 가득하다.</span>
+                    </div>                    
+                </td>
+            </tr>            
+            <tr>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_010_character5.jpg")}}">
+                    <div class="characterText">
+                        <span class="bold size18">돌아가고 싶은 자</span><br>
+                        <span>오늘도 이윤주는 집에 가지 못했다고 한다. 매우.</span>
+                    </div>
+                </td>
+                <td class="characterBox">         
+                </td>
+            </tr>                 
+        </table>
+    </div>
+{% endblock %}

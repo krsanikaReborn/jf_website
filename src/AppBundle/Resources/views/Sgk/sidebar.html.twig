@@ -1,0 +1,23 @@
+{% block side %}
+<div id="sidebar">
+    <div class="side_box">
+    </div>
+    <div class="side_box">
+    </div>    
+    <div class="side_box">
+        <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/JokerForge" data-widget-id="569426946249879552">@JokerForge 님의 트윗</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+    <div class="side_box">
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.0";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+        <div class="fb-like-box" data-href="https://www.facebook.com/jokerforge" data-width="250" data-height="300" data-colorscheme="dark" data-show-faces="true" data-header="false" data-stream="true" data-show-border="true"></div>
+    </div>
+</div>
+{% endblock %}

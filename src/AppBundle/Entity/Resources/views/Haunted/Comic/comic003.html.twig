@@ -1,0 +1,33 @@
+{% extends "AppBundle:Haunted/Comic:comics_layout.html.twig" %}
+{% block title %}사립 다이스스쿨 3교시!{% endblock %}
+{% block comicContents %}
+    <span class="bold size24">사립 다이스스쿨 제 3교시</span>
+    <div><img id="comics" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_003.jpg")}}"></div>
+    <div id="comment">
+        <span class="bold">오세아웨건 :</span>
+        <span>내 이름은 오세아! 후배 이윤주가 걱정되어 따라왔지!</span><br>
+        <span class="bold">소패왕 이윤주 :</span>
+        <span>그런데 말입니다. 이 만화는 언제 시작하나요?</span><br>
+    </div>
+    <div id="character">
+        <span class="bold size18 ">제 3교시 등장인물</span><br><br>
+        <table>
+            <tr>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_003_character1.jpg")}}">
+                    <div class="characterText">
+                        <span class="bold size18">소패왕 이윤주</span><br>
+                        <span>2학년이 되자마자 패왕의 제자로 들어간 파다완. 동시에 시스로드 나유리에게 포스의 어두운 면을 전수받고 있다. 고것이 알고싶은 영상에서 TRPG를 소꿉놀이 취급한 죗값을 치루게 되었다. 꼬시다.</span>
+                    </div>
+                </td>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_003_character2.jpg")}}">
+                    <div class="characterText">
+                        <span class="bold size18">참견쟁이 오세아웨건</span><br>
+                        <span>괴기사건이 일어나면 언제 어디서든 나타나서 설명을 해준다. 꼭 감사의 인사를 하도록 하자.</span>
+                    </div>
+                </td>
+            </tr>      
+        </table>
+    </div>
+{% endblock %}

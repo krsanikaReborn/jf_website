@@ -1,0 +1,48 @@
+{% extends "AppBundle:Haunted/Comic:comics_layout.html.twig" %}
+{% block title %}사립 다이스스쿨 6교시!{% endblock %}
+{% block comicContents %}
+    <span class="bold size24">사립 다이스스쿨 제 6교시</span>
+    <div><img id="comics" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_006.jpg")}}"></div>
+    <div id="comment">
+        <span class="bold">공식설명충 오세아 :</span>
+        <span>드디어 2화만에 말풍선을 가졌어!</span><br>
+        <span class="bold">자문 나유리 :</span>
+        <span>'후후 이부분에선 이길 수 있어.!'</span><br>
+        <span class="bold">마스터 채미리 :</span>
+        <span>벌써부터 걱정되기 시작하는데..</span><br>
+        
+    
+    </div>
+    <div id="character">
+        <span class="bold size18 ">제 6교시 등장인물</span><br><br>
+        <table>
+            <tr>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_004_character2.jpg")}}">
+                    <div class="characterText">
+                        <span class="bold size18">공식설명충</span><br>
+                        <span>2화만에 커다란 말풍선을 가지게 된 오세아. 기뻐하고 있는것 같다.</span>
+                    </div>
+                </td>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_004_character3.jpg")}}">
+                    <div class="characterText">
+                        <span class="bold size18">자문</span><br>
+                        <span>TRPG에선 초보인 유소연을 놀려먹기 위해 만반의 준비를 하고 있는 나유리. 앞날이 보이는것 같다.</span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_006_character1.jpg")}}">
+                    <div class="characterText">
+                        <span class="bold size18">마스터</span><br>
+                        <span>이야기꾼이라는 이유 하나만으로 마스터가 된 채미리. 준비된 항암제는 충분한지?</span>
+                    </div>
+                </td>
+                <td class="characterBox">
+                </td>
+            </tr>            
+        </table>
+    </div>
+{% endblock %}

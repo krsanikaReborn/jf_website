@@ -1,0 +1,329 @@
+html{
+}
+body{
+    margin : 0px;
+    background-color: black;
+    height: 100%;
+}
+a{
+    text-decoration:none;
+}
+
+a img{
+    border: 0px;
+}
+
+.right{
+    color: white;
+    border-right: 1px solid white;
+    text-shadow: -1px 0 black, 0 1px black,1px 0 black, 0 -1px black;
+    filter: Shadow(Color=black, Direction=130, Strength=1);    
+    //IE Proprietary Filter
+}
+
+#backgroundHaunted{
+    /*position: relative;*/
+    left:50%;
+    margin-left: -640px;
+}
+
+.backgroundImg{
+    width: 1280px;
+    height: 1524px;    
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+#backgroundHaunted2{
+    background-color: white;
+  opacity: 0.4;
+}
+#backgroundHaunted3{
+  width: 1280px;
+}
+#backgroundHaunted4{
+  width: 1280px;
+  height: 1424px;
+  top: 100px;
+}
+#back_dark{
+    position:absolute; 
+    top: 0px;
+    left: 0px;
+    z-index:10;
+    display:none; 
+    width:100%; 
+    height:100%;
+    background-color: black;
+    opacity: 0.7;
+}
+
+.white{
+    color: white;
+}
+
+#adText{
+    text-shadow: -1px 0 black, 0 1px black,
+      1px 0 black, 0 -1px black;
+    filter: Shadow(Color=black, Direction=130, Strength=1); /* IE Proprietary Filter*/    
+    color: white !important;
+}
+#leftContents{
+    position: absolute;
+}
+
+#pictreZone{
+    top: 10em;
+    left: 5em;    
+    position: absolute;
+    text-align: center;
+    color: white !important;
+}
+
+#pictreZone:hover #adText{
+    font-size: 28px;
+}
+
+#pictreZone:hover #hauntedPictre{
+    height: 200px;
+    border: yellow 4px solid;
+}
+#pictreZone_map{
+    top: 77em;
+    left: 3em;    
+    position: absolute;
+    text-align: center;
+    color: white !important;
+}
+#pictreZone_map img{
+    height: 150px;
+}
+#pictreZone_map:hover #adText{
+    font-size: 28px;
+}
+
+#pictreZone_map:hover #hauntedPictre_map{
+    height: 200px;
+    border: yellow 4px solid;
+}
+#pictreZone_marker{
+    top: 77em;
+    left: 20em;    
+    position: absolute;
+    text-align: center;
+    color: white !important;
+}
+#pictreZone_marker img{
+    height: 150px;
+}
+#pictreZone_marker:hover #adText{
+    font-size: 28px;
+}
+
+#pictreZone_marker:hover #hauntedPictre_marker{
+    height: 200px;
+    border: yellow 4px solid;
+}
+#pictreZone_sheet{
+    top: 77em;
+    left: 35em;    
+    position: absolute;
+    text-align: center;
+    color: white !important;
+}
+#pictreZone_sheet img{
+    height: 150px;
+}
+#pictreZone_sheet:hover #adText{
+    font-size: 28px;
+}
+
+#pictreZone_sheet:hover #hauntedPictre_sheet{
+    height: 200px;
+    border: yellow 4px solid;
+}
+#hauntedPictre{
+    height: 150px;
+    border: white 2px solid;
+}
+#hauntedCBig{
+  height: 700px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 20;
+  display: none;
+}
+
+#errata{
+    top: 28em;
+    left: 35px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    position: absolute;
+    width: 800px;
+    text-align: center;
+    background-color: #FFF;
+    border-radius: 20px;
+}
+
+#errata table{
+    margin: 15px auto 15px auto;
+    width: 95%;
+}
+
+#errata table,#errata tr,#errata td,#errata th{
+    border: 2px solid #d8ecd8;
+    border-collapse: collapse;
+}
+
+#errata th{
+    font-weight: bold;
+    background-color: #abd7a4;
+}
+
+#errata img{
+    width: 350px;
+}
+
+#footer{
+    color : white;
+    position: absolute;
+    background-color: #5c4e4f;
+    width : 1270px;
+    bottom : -29px;
+    padding : 5px;
+    left:50%;
+    margin-left: -640px;    
+}
+
+#rightContents{
+    top: 20px;
+    left: 65%;
+    position: absolute;
+}
+
+#menuTable{
+    vertical-align: top;
+    border-collapse: collapse;
+}
+#menuTable td{
+    padding: 10px;  
+    vertical-align: top;    
+}
+#menuTable .right td{
+    border: black dotted 1px;    
+}
+
+#movieTitle{
+  width: 250px;
+  height: 136px;   
+  border: 1px plum solid;
+  background-size: cover;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#playButton{
+    margin-top: 39px;
+    width: 64px;
+    height: 64px;
+}
+
+#newsBack{
+    width: 250px;
+    height: 90px;
+    background-color: white;
+    opacity:0.7;
+    position: relative;
+}
+
+#newsText{
+    vertical-align: middle;
+    width: 240px;
+    height: 80px;
+    position: absolute;
+    z-index: 1;
+    padding: 5px;
+}    
+
+
+#hauntedComics{
+    width: 250px;
+    height: auto;
+    background-size: cover;
+    float: left;
+    border: 1px plum solid;
+}
+
+#hauntedDownload{
+    width: 250px;
+    height: auto;
+    background-size: cover;
+    float: left;
+    border: 1px plum solid;
+}
+
+#jokerTwitter{
+    width: 250px;
+    height: auto;  
+    border: 1px plum solid;    
+}
+
+.snsButton{
+    display: inline-block;
+}
+
+#hauntedSnsLong{
+    height: 20px;
+    padding: 10px 0px 10px 0px;
+}
+#hauntedSnsButton{
+    height: 20px;
+}
+
+#snsTwitter{
+    left: 22em;
+    position: absolute;    
+}
+
+#hauntedSnsButton #snsTwitter{
+    left: 137px;
+    position: absolute;    
+}
+
+#snsFacebookShare2{
+    left: 2em;       
+}
+
+#snsFacebookShare{
+    left: 4em;
+}
+
+#hauntedLog{
+    width: 555px;
+    height: 114px;    
+    margin-top: 3em;
+    margin-left: 6em;
+    border: 0px;
+}
+
+.hauntedHome #homeTd1{
+    padding-top: 500px;
+}
+
+.hauntedHome  #homeTd2{
+    padding-top: 500px;
+}
+
+#tumblbug{
+    width: 250px;
+    height: 250px;    
+}
+
+#jokerforgeLogo{
+    width: 250px;
+    height: auto;      
+    background-color: black;
+}

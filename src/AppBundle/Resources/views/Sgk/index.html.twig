@@ -1,0 +1,122 @@
+{% extends "AppBundle::sgk_layout.html.twig" %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{asset('bundles/app/css/sgk_index.css')}}" />
+{% endblock %}
+{% block header %}{% include 'AppBundle:Sgk:header.html.twig' %}{% endblock %}
+{% block event %}
+    <div id="event_box">
+    </div>
+{% endblock %}
+{% block minsession %}
+    <div id = "backimg_s" style="background-image:url({{asset('bundles/app/image/sgk/img/sgk_sBack.jpg')}});"></div>
+    <div id ="button_back">
+        <img id="sesstion_head" alt="" src="{{asset('bundles/app/image/sgk/ui/sgk_sessionH1.png')}}">
+        <a href="{{url("sgk_session")}}">{# URL바꿔줘야함  #}
+            <img alt="sesstionbutton01_1" src="{{asset('bundles/app/image/sgk/ui/sgk_sesstionB01_1.png')}}"></a>
+                <a href="{{url("sgk_session")}}">{# URL바꿔줘야함  #}
+                <img alt="sesstionbutton01_1" src="{{asset('bundles/app/image/sgk/ui/sgk_sesstionB01_1.png')}}"></a>
+                <a href="{{url("sgk_session")}}">{# URL바꿔줘야함  #}
+                <img alt="sesstionbutton01_1" src="{{asset('bundles/app/image/sgk/ui/sgk_sesstionB01_1.png')}}"></a>
+                <a href="{{url("sgk_session")}}">{# URL바꿔줘야함  #}
+                <img alt="sesstionbutton01_1" src="{{asset('bundles/app/image/sgk/ui/sgk_sesstionB01_1.png')}}"></a>
+                <a href="{{url("sgk_session")}}">{# URL바꿔줘야함  #}
+                <img alt="sesstionbutton01_1" src="{{asset('bundles/app/image/sgk/ui/sgk_sesstionB01_1.png')}}"></a>
+                <a href="{{url("sgk_session")}}">{# URL바꿔줘야함  #}
+                <img alt="sesstionbutton01_1" src="{{asset('bundles/app/image/sgk/ui/sgk_sesstionB01_1.png')}}"></a>
+                <a href="{{url("sgk_session")}}">{# URL바꿔줘야함  #}
+                <img alt="sesstionbutton01_1" src="{{asset('bundles/app/image/sgk/ui/sgk_sesstionB01_1.png')}}"></a>
+                <a href="{{url("sgk_session")}}">{# URL바꿔줘야함  #}
+                <img alt="sesstionbutton01_1" src="{{asset('bundles/app/image/sgk/ui/sgk_sesstionB01_1.png')}}"></a>
+                <a href="{{url("sgk_session")}}">{# URL바꿔줘야함  #}
+                <img alt="sesstionbutton01_1" src="{{asset('bundles/app/image/sgk/ui/sgk_sesstionB01_1.png')}}"></a>
+            <img alt="sesstionbutton01_1" src="{{asset('bundles/app/image/sgk/ui/sgk_sesstionB01_1.png')}}"></a>
+                <a href="{{url("sgk_session")}}">{# URL바꿔줘야함  #}
+                <img alt="sesstionbutton01_1" src="{{asset('bundles/app/image/sgk/ui/sgk_sesstionB01_1.png')}}"></a>
+                <a href="{{url("sgk_session")}}">{# URL바꿔줘야함  #}
+                <img alt="sesstionbutton01_1" src="{{asset('bundles/app/image/sgk/ui/sgk_sesstionB01_1.png')}}"></a>
+                <a href="{{url("sgk_session")}}">{# URL바꿔줘야함  #}
+                <img alt="sesstionbutton01_1" src="{{asset('bundles/app/image/sgk/ui/sgk_sesstionB01_1.png')}}"></a>
+                <a href="{{url("sgk_session")}}">{# URL바꿔줘야함  #}
+                <img alt="sesstionbutton01_1" src="{{asset('bundles/app/image/sgk/ui/sgk_sesstionB01_1.png')}}"></a>
+                <a href="{{url("sgk_session")}}">{# URL바꿔줘야함  #}
+                <img alt="sesstionbutton01_1" src="{{asset('bundles/app/image/sgk/ui/sgk_sesstionB01_1.png')}}"></a>
+                <a href="{{url("sgk_session")}}">{# URL바꿔줘야함  #}
+                <img alt="sesstionbutton01_1" src="{{asset('bundles/app/image/sgk/ui/sgk_sesstionB01_1.png')}}"></a>
+                <a href="{{url("sgk_session")}}">{# URL바꿔줘야함  #}
+                <img alt="sesstionbutton01_1" src="{{asset('bundles/app/image/sgk/ui/sgk_sesstionB01_1.png')}}"></a>
+                <a href="{{url("sgk_session")}}">{# URL바꿔줘야함  #}
+                <img alt="sesstionbutton01_1" src="{{asset('bundles/app/image/sgk/ui/sgk_sesstionB01_1.png')}}"></a>                    
+                <a href="{{url("sgk_session")}}">
+            <img id="goto_session" alt="sesstionbutton" src="{{asset('bundles/app/image/sgk/ui/sgk_sesstionB.png')}}"></a>
+        
+    </div> 
+
+{% endblock %}
+{% block contents %} 
+    {% block minworld %}
+        <div>
+            <span class="text_head"><img src="{{asset('bundles/app/image/sgk/img/text_detail.png')}}"></span>
+            <div id="main_video">
+                <iframe width="480" height="360" src="https://www.youtube.com/embed/sHRkKFcS9fU?rel=0" frameborder="0" allowfullscreen>
+                
+                </iframe>
+            </div>
+            <div>
+                <h3>
+                <span class="detail_head"><br>『결정해라. 네가 들고 있는 꽃은 무슨 색이냐?』</span>
+                <span class="detail_head"><br>세계를 바꿔쓰려는 자들의 기록 "설월화"</span>
+                </h3>
+                <span>
+                    <br>신, 인간, 그리고 인외의 존재들. 세상을 바꿔쓰고자 하는 자들의 기록.
+                    <br>시대를 넘나들며 전개되는 기이한 이야기들을 다룬 프로젝트입니다.<br><br>
+                    <h4><span>TRPG란?</span></h4>
+                    <span>
+                    <br>TRPG란 Table Role Playing Game의 약자로써, 정해져있는 규칙과 대화를 바탕으로
+                    가상의 세계를 구성하여 여러명이 함께 이야기를 만들어나가는 게임입니다. <br>
+
+                    <br>즉흥 연기를 하는 소꿉놀이와도 같지만, 이 것은 소설처럼 정해진 대로 움직이는 것이 아닌 
+                    참여하는 사람이 정해진 규칙 아래에서 능동적으로 움직여 이야기를 만들어나간다는
+                    매력이 존재합니다.<br>
+
+                    <br>일반적으로, 세계를 구성하고 NPC를 연기하는 사람을 GM(Game Master)라고 칭하며
+                    하나의 PC(Player Character)를 연기하는 사람을 PL(Player)라고 합니다.<br><br>
+                    </span>
+                </span>
+                <div id="cookie_detail">
+                    <h3><span>리플레이란</span></h3>
+                    <span>실제로 플레이를 한 기록을 가다듬어 작품화를 한 것을 가르켜 리플레이라고 칭합니다.
+                    <br>이 것을 제작하는 것은, 당시 즐겁게 플레이한 기록을 되살려보자는 것부터 시작하여
+                    다른 사람에게 TRPG의 즐거움을 전파하고 싶은 것 등, 여러가지 의도가 존재합니다.</span>
+                </div>
+            </div>
+            <br>
+        <a href={{url("sgk_world")}}><img id ="worldbutton" alt="worldbutton" src="{{asset('bundles/app/image/sgk/ui/sgk_worldB.png')}}"></a>
+        <br>
+        </div>
+    {% endblock %}
+    {% block minCharStaff %}
+        <br>
+        <span class="text_head"><img src="{{asset('bundles/app/image/sgk/img/text_player.png')}}"></span>
+        <div class="dis_place">
+            <div class = "cButton">
+                <a href="{{url("sgk_character")}}">{# URL바꿔줘야함  #}
+                    <div id="cB1"></div></a>  
+                <a href="{{url("sgk_character")}}">{# URL바꿔줘야함  #}
+                    <div id="cB2"></div></a>    
+                <a href="{{url("sgk_character")}}">{# URL바꿔줘야함  #}
+                    <div id="cB3"></div></a>    
+                <a href="{{url("sgk_character")}}">{# URL바꿔줘야함  #}
+                    <div id="cB4"></div></a>    
+                <a href="{{url("sgk_character")}}">{# URL바꿔줘야함  #}
+                    <div id="cB5"></div></a>    
+                <a href="{{url("sgk_character")}}">
+                <div id="charB"></div></a>                    
+            </div>
+        </div>
+{% endblock %}
+
+{% endblock %}
+{% block side %}
+    {% include 'AppBundle:Sgk:sidebar.html.twig'%}
+{% endblock %}

@@ -1,0 +1,58 @@
+{% extends "AppBundle:Haunted/Comic:comics_layout.html.twig" %}
+{% block title %}사립 다이스스쿨 14교시!{% endblock %}
+{% block comicContents %}
+    <span class="bold size24">사립 다이스스쿨 제 14교시</span>
+    <div><img id="comics" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_014.jpg")}}"></div>
+    <div id="comment">
+        <span class="bold">지고는 못사는 나유리 :</span>
+        <span>네 능력이 뭐라고! 마스터의 허가? 인정할 수 없어!</span><br>
+        <span class="bold">내면의 어둠을 엿본 유소연 :</span>
+        <span>나는 내 마음의 목소리에 충실했을 뿐이다.</span><br>
+        <span class="bold">살의의 파동에 눈뜬 채미리 :</span>
+        <span>둘 다 그만좀 하고 여기좀 봐!</span><br>
+        <span class="bold">나유리&유소연 :</span>
+        <span>뭐야!</span><br>
+        <span class="bold">살의의 파동에 눈뜬 채미리 :</span>
+        <span>I'm your Master!</span><br>
+        <span class="bold">진실을 깨달은 이윤주 :</span>
+        <span>No!!!!!!</span><br>        
+    
+    </div>
+    <div id="character">
+        <span class="bold size18 ">제 14교시 등장인물</span><br><br>
+        <table>
+            <tr>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_010_character2.jpg")}}">
+                    <div class="characterText">
+                        <span class="bold size18">지고는 못사는 나유리</span><br>
+                        <span>규칙을 지키는 것 같지만 사실 유소연에게 밀리는 게 싫을 뿐이었다고 한다.</span>
+                    </div>
+                </td>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_010_character3.jpg")}}">
+                    <div class="characterText">
+                        <span class="bold size18">내면의 어둠을 엿본 유소연</span><br>
+                        <span>어두운 면에 빠져든 것 같다. 힘에 취할 것 같다.</span>
+                    </div>
+                </td>
+            </tr>     
+            <tr>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_010_character1.jpg")}}">
+                    <div class="characterText">
+                        <span class="bold size18">살의의 파동에 눈뜬 채미리</span><br>
+                        <span>무언가로 각성한 것 같다. 어두운 포스가 풍기고 있다.</span>
+                    </div>
+                </td>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_010_character5.jpg")}}">
+                    <div class="characterText">
+                        <span class="bold size18">진실을 깨달은 이윤주:</span><br>
+                        <span> 윤주는 깨달았다. <del>작은</del>마스터를 건드리면 클나는거야 <del>작은</del>마스터를...</span>
+                    </div>                    
+                </td>
+            </tr>             
+        </table>
+    </div>
+{% endblock %}

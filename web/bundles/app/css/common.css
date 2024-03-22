@@ -1,0 +1,69 @@
+/* 
+    Created on : 2015/02/14, 14:04:20
+    Author     : krsanika
+*/
+
+body, table, div, p, a, span, h1, h2, h3, h4, input{
+    font-family: 'Nanum Gothic', sans-serif;     
+    color : #242424;    
+}
+
+.float{
+    float: left;
+}
+
+.clear {
+    clear : both;
+}
+
+.size10{
+    font-size: 10px;
+}
+
+.size14 {
+    font-size: 14px;
+}
+
+.size18 {
+    font-size: 18px;    
+}
+
+.size24 {
+    font-size: 24px;        
+}
+
+.size28 {
+    font-size: 28px;        
+}
+
+.titletext {
+    font-size: 64px;        
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 41px;
+    font-weight: bolder;
+    color : #6D0000;
+}
+
+.georgia{
+    font-family : "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-style: italic;
+}
+.center{
+    text-align: center;
+}
+
+.right{
+    text-align: right;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.red{
+    color : #AA3333;
+}
+.white{
+    color : #FFFFFF;
+}
+

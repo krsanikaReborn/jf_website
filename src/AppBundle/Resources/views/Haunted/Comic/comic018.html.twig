@@ -1,0 +1,39 @@
+{% extends "AppBundle:Haunted/Comic:comics_layout.html.twig" %}
+{% block title %}사립 다이스스쿨 18교시!{% endblock %}
+{% block comicContents %}
+    <span class="bold size24">사립 다이스스쿨 제 18교시</span>
+    <div><img id="comics" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_018.jpg")}}"></div>
+    <div id="comment">
+        <span class="bold">성장하는 채미리 :</span>
+        <span>이렇게 즐거운 것도 오랜만인걸?</span><br>
+        <span class="bold">어머니의 마음 이로 :</span>
+        <span>후후. 잘됐네 잘됐어</span><br>
+        <span class="bold">성장하는 채미리 :</span>
+        <span>그럼 조금만 더 얘기하고 밥먹으러 가자!</span><br>        
+        <span class="bold">어머니의 마음 이로 :</span>
+        <span>오늘 점심은 분명 맛있을거야.</span><br>   
+        <span class="bold">성장하는 채미리 :</span>
+        <span>(뭔가 잊은 것 같은 기분이...)</span><br>         
+    </div>
+    <div id="character">
+        <span class="bold size18 ">제 18교시 등장인물</span><br><br>
+        <table>
+            <tr>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_018_character1.jpg")}}">
+                    <div class="characterText">
+                        <span class="bold size18">이로</span><br>
+                        <span>채미리의 성장을 흐뭇하게 지켜보고 있다.</span>
+                    </div>
+                </td>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_018_character2.jpg")}}">
+                    <div class="characterText">
+                        <span class="bold size18">채미리</span><br>
+                        <span>오랜만에 느끼는 즐거움을 만끽하고 있다. 크리에이터가 자주 겪는 고통이 다가올 것을 모른채...</span>
+                    </div>
+                </td>
+            </tr>      
+        </table>
+    </div>
+{% endblock %}

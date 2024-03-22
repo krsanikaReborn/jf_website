@@ -1,0 +1,33 @@
+{% extends "AppBundle:Haunted/Comic:comics_layout.html.twig" %}
+{% block title %}사립 다이스스쿨 제 9교시!{% endblock %}
+{% block comicContents %}
+    <span class="bold size24">사립 다이스스쿨 제 9교시</span>
+    <div><img id="comics" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_009.jpg")}}"></div>
+    <div id="comment">
+        <span class="bold">설명왕 나유리 :</span>
+        <span>오게 두어라...알피지가 굶주려있다.</span><br>
+        <span class="bold">계승하는 오세아 :</span>
+        <span>계승이 아니라 되돌려 받는거야!(버럭)</span><br>
+    </div>
+    <div id="character">
+        <span class="bold size18 ">제 9교시 등장인물</span><br><br>
+        <table>
+            <tr>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_004_character3.jpg")}}">
+                    <div class="characterText">
+                        <span class="bold size18">설명왕</span><br>
+                        <span>2화 연속 설명을 잡고 있던 나유리. 이번에는 판정의 예시로만 출현했다.</span>
+                    </div>
+                </td>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_004_character2.jpg")}}">
+                    <div class="characterText">
+                        <span class="bold size18">계승하는 자</span><br>
+                        <span>어쩌다가 설명충 자리를 빼앗겼던 오세아. 이제부턴 제대로 자리를 유지할 수 있을까!</span>
+                    </div>
+                </td>
+            </tr>            
+        </table>
+    </div>
+{% endblock %}

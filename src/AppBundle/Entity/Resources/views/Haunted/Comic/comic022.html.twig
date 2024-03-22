@@ -1,0 +1,38 @@
+{% extends "AppBundle:Haunted/Comic:comics_layout.html.twig" %}
+{% block title %}사립 다이스스쿨 12교시!{% endblock %}
+{% block comicContents %}
+    <span class="bold size24">사립 다이스스쿨 제 12교시</span>
+    <div><img id="comics" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_012.jpg")}}"></div>
+    <div id="comment">
+        <span class="bold">강제 설명충 채미리 :</span>
+        <span>자, 네가 정한 능력치를 보면서 장 단점을 생각해봐.</span><br>
+        <span class="bold">현실의 벽을 느낀 이윤주 :</span>
+        <span>음... 제 경우는 돚거보다 느리고, 깡통보다 약하며 마법사보다 멍청하네요.</span><br>
+        <span class="bold">강제 설명충 채미리 :</span>
+        <span>어중간한게 단점이니?</span><br>
+        <span class="bold">현실의 벽을 느낀 이윤주 :</span>
+        <span>......</span><br>        
+        
+    </div>
+    <div id="character">
+        <span class="bold size18 ">제 12교시 등장인물</span><br><br>
+        <table>
+            <tr>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_010_character5.jpg")}}">
+                    <div class="characterText">
+                        <span class="bold size18">현실의 벽을 느낀 이윤주</span><br>
+                        <span>게임에서도 유소연과 나유리를 넘을 수 없어 절망하고 있다.</span>
+                    </div>
+                </td>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_010_character1.jpg")}}">
+                    <div class="characterText">
+                        <span class="bold size18">강제 설명충 채미리</span><br>
+                        <span>계속해서 설명을 해야하는 마스터 역에 불합리함을 느끼고 있다.</span>
+                    </div>
+                </td>
+            </tr>      
+        </table>
+    </div>
+{% endblock %}

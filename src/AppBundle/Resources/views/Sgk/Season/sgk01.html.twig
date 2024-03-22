@@ -1,0 +1,11 @@
+{% extends "AppBundle::sgk_layout.html.twig" %}
+{% block header %}{% include 'AppBundle:Sgk:header.html.twig'%}{% endblock%}
+{% block contents %}
+    {% block session_nav %}
+        {% include 'AppBundle:Sgk/Season/Sgk1:sgk01_nav.html.twig' %}
+    {% endblock %}
+    {% block session_contents %}
+        {% include 'AppBundle:Sgk/Season/Sgk1:sgk01_'~chapter~'.html.twig' %}
+    {% endblock %}
+
+{% endblock %}

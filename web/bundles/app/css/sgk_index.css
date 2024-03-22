@@ -1,0 +1,170 @@
+/* 
+    Created on : 2015. 2. 24, 오후 6:56:05
+    Author     : Gato
+*/
+#top_contents{
+    width: 1024px;
+    height: 600px;
+}
+#sidebar_box{
+    position: relative;
+}
+
+#backimg_s{
+    width:1000px;
+    height:460px;
+    position: absolute;
+    border: silver 1px solid;
+/*    left: 50%;
+    margin-left: -500px;*/
+    z-index: 0;
+}
+
+#button_back{
+    position: absolute;
+    width: 290px;
+    height: 420px;
+    float:left;
+    left: 680px;
+    margin: 10px 0px 10px 0px;
+    background-color: #565656;
+    padding: 5px;
+    text-align: center;
+}
+#button_back img{
+    position: relative;
+    width: 143px;
+    height:36px;
+    float:left;
+    margin: 1px;
+    opacity: 1;
+    background-color: white;
+
+}
+
+#button_back #goto_session{
+    width: 288px;
+/*    background: */
+}
+#button_back #sesstion_head{
+    width: 288px;
+}
+
+#event_box{
+    width: 1000px;
+    height: 110px;
+    margin-bottom: 10px;
+    background-color: #000;
+    /*background-image:*/ 
+}
+
+#main_video{
+    width: 480px;
+    margin: 0px auto;
+}
+
+.detail_head{
+    font-size: 1.2em;
+}
+
+#cookie_detail{
+    width: 600px;
+    height: 120px;
+    border: silver  5px solid;
+    border-radius: 3em 0.5em 3em 0.5em;
+    padding: 0px 10px 10px 20px;
+}
+
+#worldbutton{
+
+    right: 5%;
+    background-color: white;
+}
+
+/*.cButton{
+    height: 80px;
+    width: 80px;
+    background: transparent;
+    color: #fff;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    border: 3px solid #fff;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}*/
+
+#cB1{
+    background-image: url('../image/sgk/ui/sgk_characterB_1.png');
+}
+#cB2{
+  clear: both;
+  margin-left: 36%;
+  margin-top: -34%;    
+  background-image: url('../image/sgk/ui/sgk_characterB_2.png');
+}
+#cB3{
+    background-image: url('../image/sgk/ui/sgk_characterB_3.png');
+  clear: both;
+  margin-left: 36.2%;
+  margin-top: -70%;
+}
+#cB4{
+    background-image: url('../image/sgk/ui/sgk_characterB_4.png');
+  margin-top: -69.7%;
+  margin-left: 72.3%;
+}
+#cB5{
+    background-image: url('../image/sgk/ui/sgk_characterB_5.png');
+  clear: both;
+  margin-top: -105.5%;
+  margin-left: 72.3%;
+}
+#charB{
+    background-image: url('../image/sgk/ui/sgk_characterB.png');
+  clear: both;
+  width: 248px;
+  height: 120px;
+  margin-top: 2%;
+}
+.dis_place{
+    width: 100%;
+    height: 330px;
+}
+
+.cButton { 
+    position: relative;
+    width : 50%; 
+    margin-top: 25%;
+    margin-left : 19%; 
+    transform-origin : 60%  0; 
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);    
+    transform : rotate (- 45deg ); 
+} 
+.cButton div{ 
+    float : left; 
+    top: 50px;
+    width : 120px; 
+    height: 120px; 
+/*    padding-bottom : 19%; */
+    margin : 0.5%; 
+    background : teal; 
+} 
+.cButton div:hover{ 
+    background: gold; 
+} 
+.cButton div:nth-child(2){ 
+    clear : left; 
+    margin-left : 20.5%; 
+} 
+.cButton div:nth-child(3){ 
+    clear : left; 
+    margin-left : 60.5%; 
+}

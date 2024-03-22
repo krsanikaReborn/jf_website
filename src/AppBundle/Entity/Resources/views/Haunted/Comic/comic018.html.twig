@@ -1,0 +1,55 @@
+{% extends "AppBundle:Haunted/Comic:comics_layout.html.twig" %}
+{% block title %}사립 다이스스쿨 8교시!{% endblock %}
+{% block comicContents %}
+    <span class="bold size24">사립 다이스스쿨 제 8교시</span>
+    <div><img id="comics" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_008.jpg")}}"></div>
+    <div id="comment">
+        <span class="bold">모든것을 잃어버린 이윤주 :</span>
+        <span>(읍컥)</span><br>
+        <span class="bold">폭발사산 채미리 :</span>
+        <span>쟤 저러다가 무슨 일 나는거 아냐? </span><br>
+        <span class="bold">설명충을 계승하는 나유리 :</span>
+        <span>괜찮아 골든타임 안에만 살려놓으면.</span><br>        
+        <span class="bold">P=Ero :</span>
+        <span>그리고 보니 모니터가 4:3이다.</span><br>   
+        <span class="bold">일동 :</span>
+        <span>뭔가 제 4의 벽이 깨진것 같은데!?!?!?</span><br>         
+    </div>
+    <div id="character">
+        <span class="bold size18 ">제 8교시 등장인물</span><br><br>
+        <table>
+            <tr>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_004_character1.jpg")}}">
+                    <div class="characterText">
+                        <span class="bold size18">모든것을 잃어버린자</span><br>
+                        <span>세이브 데이터가 파란 화면으로 날아가버린 이윤주. 꼬시다.</span>
+                    </div>
+                </td>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_004_character3.jpg")}}">
+                    <div class="characterText">
+                        <span class="bold size18">설명충을 계승하는자</span><br>
+                        <span>설명이 길어지고 있는 나유리. 적당히 하자. 하지만 본인도 언제 끝날지 모르는것 같다.</span>
+                    </div>
+                </td>
+            </tr>      
+            <tr>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_006_character1.jpg")}}">
+                    <div class="characterText">
+                        <span class="bold size18">폭발사산</span><br>
+                        <span>머리가 사요나라! 폭발사산!</span>
+                    </div>
+                </td>
+                <td class="characterBox">
+                    <img class="characterImg" src="{{asset("bundles/app/image/haunted/diceschool/diceschool_008_character1.jpg")}}">
+                    <div class="characterText">
+                        <span class="bold size18">요정</span><br>
+                        <span>어디서 많이 본듯 한 것. 빨리 다음화 연재를 하지 않으면 타임오버로 모두 죽어버렷!</span>
+                    </div>                    
+                </td>
+            </tr>   
+        </table>
+    </div>
+{% endblock %}

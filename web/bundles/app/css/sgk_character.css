@@ -1,0 +1,237 @@
+/* 
+    Created on : 2015. 3. 31, 오후 9:56:14
+    Author     : Gato
+*/
+
+.char_box{
+    margin : 10px;
+    padding : 5px;
+}
+#content_body{
+    float:left;
+    width: 100%;
+    position: relative;
+}
+
+.char_img{
+    background : red;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+    float : left;
+    position: absolute;
+}
+.char_img:hover{
+    background : yellowgreen;    
+}
+.char_img.s16{
+    width : 210px;
+    height : 210px;
+}
+
+.char_img.s4{
+    width : 100px;
+    height : 100px;
+}
+.char_img.s2{
+  width: 103px;
+  height: 45px;
+}
+.char_img.s1{
+    width : 50px;
+    height : 50px;
+}
+
+#pageTitle{
+    margin-bottom : 34px;
+}
+
+/*.popup_change{
+    width:100%; 
+    height:100%; 
+}*/
+.char_page{
+    width: 200px;
+    height: 400px;
+    position:absolute; 
+    left:50%; 
+    bottom:5em; 
+    z-index:160;
+    display:none; 
+    margin-left: -475px;
+    border-radius: 1em;   
+}
+.char_back1{
+    position:absolute; 
+    top: 50%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -360px;
+    z-index:155;
+    display:none; 
+    width: 720px; 
+    height:600px;    
+    background-color: black;
+    opacity: 0.7;    
+}
+#character_box{
+    position: absolute;
+    top: 7em;
+}
+#sgk_01{
+  left: 25.6em;
+  top: 21em;
+}
+#sgk_02{
+  left: 16.1em;
+  top: 11.3em;
+}
+#sgk_03{
+  left: 29em;
+  top: 10em;
+}
+#sgk_04{
+  left: 25.9em;
+  top: 9.2em;
+}
+#sgk_05{
+  left: 23.5em;
+  top: 6.8em;    
+}
+#sgk_06{
+  left: 25.4em;
+  top: 5.8em;
+}
+#sgk_07{
+  left: 5.3em;
+  top: 14.7em;   
+}
+#sgk_08{
+  left: 10em;
+  top: 10em;    
+}
+#sgk_09{
+  left: 14.7em;
+  top: 5.4em;    
+}
+#sgk_10{
+  left: 19.4em;
+  top: 0.7em;    
+}
+#sgk_11{
+  left: 24.2em;
+  top: -4em;
+}
+#sgk_12{
+  left: 10em;
+  top: 0.8em;    
+}
+#sgk_13{
+  left: 29em;
+  top: 0.7em;    
+}
+
+#sgk_14{
+  left: 6.5em;
+  top: 21em;
+}
+#sgk_15{
+  left: 33.7em;
+  top: 34em;
+}
+#sgk_16{
+  left: 37.7em;
+  top: 40.1em;
+}
+#sgk_17{
+  left: 33.8em;
+  top: 14.8em; 
+}
+#sgk_18{
+  left: 38.5em;
+  top: 19.5em; 
+}
+#sgk_19{
+  left: 38.5em;
+  top: 10.2em;  
+}
+#sgk_20{
+  left: 43.2em;
+  top: 14.8em; 
+}
+#sgk_21{
+  left: 47.8em;
+  top: 19.5em;
+}
+#sgk_22{
+  left: 43.1em;
+  top: 5.5em;   
+}
+#sgk_23{
+  left: 16em;
+  top: 30.7em; 
+}
+#sgk_24{
+  left: 29em;
+  top: 38.8em;
+}
+#sgk_25{
+  left: 24.2em;
+  top: 43.6em;
+}
+#sgk_26{
+  left: 21em;
+  top: 47.6em;
+}
+#sgk_27{
+  left: 23.4em;
+  top: 50em;
+}
+#sgk_28{
+  left: 18.6em;
+  top: 50em;
+}
+#sgk_29{
+  left: 14.7em;
+  top: 43.6em;
+}
+#sgk_30{
+  left: 9.8em;
+  top: 38.8em;
+}
+#char_page_1{
+    background: yellow;    
+}
+#char_page_2{
+    background: plum;    
+}
+#char_page_3{
+    background: pink;    
+}
+#char_page_4{
+    background: skyblue;    
+}
+#char_page_5{
+    background: darkblue;    
+}
+#char_page_6{
+    background: darkgreen;
+}
+#char_page_7{
+    background: gold;    
+}
+#char_page_8{
+    background: gray;
+}
+#char_page_9{
+    background: royalblue;
+}
+#char_page_10{
+    background: violet;    
+}
+#char_page_11{
+    background: cyan;
+}
+#char_page_12{
+    background: magenta;
+}

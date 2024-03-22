@@ -1,0 +1,22 @@
+{% block header %}
+{% set new = new1() %}
+ <a href="{{url("joker_index")}}"><img id = "jokerforge_logo" alt="jokerforge_logo" src="{{asset('bundles/app/image/jokerforge_logo_03.png')}}"></a>
+                
+           <div id="header_box">
+               <a href="{{url("sgk_index")}}"><div id="menu_main" class="header_body"></div></a>
+               <div id="menu_session" class="header_body lister"></div>
+                <div id="submenu1" class="submenu">
+                    <div id="submenu_line"></div>
+                    <a href="{{url("sgk01",{"chapter":new})}}"><div id="sgk1" class="submenu_body"></div></a>
+                    <a href="{{url("sgk02",{"chapter":new})}}"><div id="sgk2" class="submenu_body"></div></a>
+                    <a href="{{url("sgk03",{"chapter":new})}}"><div id="sgk3" class="submenu_body"></div></a>
+                    <a href="{{url("sgk04",{"chapter":new})}}"><div id="sgk4" class="submenu_body"></div></a>
+                </div>
+                <a href="{{url("sgk_world")}}"><div id="menu_world" class="header_body"></div></a>
+                <a href="{{url("sgk_index")}}"><div id="logo" class="header_body"></div></a>
+                <a href="{{url("sgk_character")}}"><div id="menu_character" class="header_body"></div></a>
+                <a href="{{url("sgk_staff")}}"><div id="menu_staff" class="header_body"></div></a>
+                <a href="{{url("sgk_download")}}"><div id="menu_download" class="header_body"></div></a>
+            </div>
+
+{% endblock %}
